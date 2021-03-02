@@ -1,3 +1,5 @@
+// This code has been obtained from Code with Ania Kubow Tutorial for Candy Crush. 
+
 document.addEventListener('DOMContentLoaded', () => {
     const grid = document.querySelector('.grid');
     const scoreDisplay = document.getElementById('score')
@@ -56,7 +58,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function dragLeave() {
-        console.log(this.id, 'dragover')
+      
     }
 
     function dragDrop() {
@@ -67,7 +69,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function dragEnd() {
-        console.log(this.id, 'dragend')
+ 
 
         //Valid moves will only allow to move it around 
         let validMoves = [
@@ -107,8 +109,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
     } 
-
-
 
     // Checking for matches 
     // Check for row of Four
