@@ -1,7 +1,8 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const grid = document.querySelector('.grid')
-    const width = 8
-    const squares = []
+    const grid = document.querySelector('.grid');
+    const scoreDisplay = document.getElementById('score')
+    const width = 8;
+    const squares = [];
     let score = 0;
 
     const puppyColors = [
@@ -11,7 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
         'purple',
         'green',
         'blue'
-    ]
+    ];
 
     // Create board 
     function createBoard() {
@@ -34,12 +35,12 @@ document.addEventListener('DOMContentLoaded', () => {
     let squareIdBeingReplaced;
 
     //In built event event listeners in every event of dragging. 
-    squares.forEach(square => square.addEventListener('dragstart', dragStart))
-    squares.forEach(square => square.addEventListener('dragend', dragEnd))
-    squares.forEach(square => square.addEventListener('dragover', dragOver))
-    squares.forEach(square => square.addEventListener('dragenter', dragEnter))
-    squares.forEach(square => square.addEventListener('dragLeave', dragLeave))
-    squares.forEach(square => square.addEventListener('drop', dragDrop))
+    squares.forEach(square => square.addEventListener('dragstart', dragStart));
+    squares.forEach(square => square.addEventListener('dragend', dragEnd));
+    squares.forEach(square => square.addEventListener('dragover', dragOver));
+    squares.forEach(square => square.addEventListener('dragenter', dragEnter));
+    squares.forEach(square => square.addEventListener('dragLeave', dragLeave));
+    squares.forEach(square => square.addEventListener('drop', dragDrop));
 
     function dragStart() {
         colorBeingDragged = this.style.backgroundColor; // Will pick the color that is being dragged
@@ -94,6 +95,14 @@ document.addEventListener('DOMContentLoaded', () => {
             if(squares[i + width].style.backgroundColor === '') { //Empty color it will be true
                 squares[i + width].style.backgroundColor = squares[i].style.backgroundColor; //Passing the color to the empty box. 
                 squares[i].style.backgroundColor = '';
+                const firstRow = [0, 1, 2, 3, 4, 5, 6, 7];
+                const isFirstRow = firstRow.includes(i);
+                if (isFirstRow && squares[i].style.backgroundColor === '') {
+                    let randomColor = Math.floor(Math.random() * puppyColors.length);
+                    squares[i].style.backgroundColor = puppyColors[randomColor];
+
+                }
+
             }
         }
 
@@ -115,6 +124,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             if (rowOfFour.every(index => squares[index].style.backgroundColor === decidedColor && !isBlank)) {  //Every index is equal to the color of the first square it will execute
                 score += 4; // Add 4 points when we find 3 colors
+                scoreDisplay.innerHTML = score;
                 rowOfFour.forEach(index => {
                     squares[index].style.backgroundColor = '' // If it matches will give it an empty color
                 })
@@ -134,6 +144,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             if (columnOfFour.every(index => squares[index].style.backgroundColor === decidedColor && !isBlank)) {  //Every index is equal to the color of the first square it will execute
                 score += 4; // Add 4 points when we find 3 colors
+                scoreDisplay.innerHTML = score;
                 columnOfFour.forEach(index => {
                     squares[index].style.backgroundColor = '' // If it matches will give it an empty color
                 })
@@ -157,6 +168,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             if (rowOfThree.every(index => squares[index].style.backgroundColor === decidedColor && !isBlank)) {  //Every index is equal to the color of the first square it will execute
                 score += 3; // Add 3 points when we find 3 colors
+                scoreDisplay.innerHTML = score;
                 rowOfThree.forEach(index => {
                     squares[index].style.backgroundColor = '' // If it matches will give it an empty color
                 })
@@ -176,6 +188,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             if (columnOfThree.every(index => squares[index].style.backgroundColor === decidedColor && !isBlank)) {  //Every index is equal to the color of the first square it will execute
                 score += 3; // Add 3 points when we find 3 colors
+                scoreDisplay.innerHTML = score;
                 columnOfThree.forEach(index => {
                     squares[index].style.backgroundColor = '' // If it matches will give it an empty color
                 })
