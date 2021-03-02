@@ -1,4 +1,4 @@
-// This code has been obtained from Code with Ania Kubow Tutorial for Candy Crush. 
+// This code has been obtained from Code with Ania Kubow Tutorial for Candy Crush with changes of my own. 
 
 document.addEventListener('DOMContentLoaded', () => {
     const grid = document.querySelector('.grid');
@@ -58,7 +58,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function dragLeave() {
-      
+
     }
 
     function dragDrop() {
@@ -69,7 +69,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function dragEnd() {
- 
+
 
         //Valid moves will only allow to move it around 
         let validMoves = [
@@ -93,8 +93,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function moveDown() {
         for (i = 0; i < 55; i++) {  // Wants to check the squares below
-        
-            if(squares[i + width].style.backgroundColor === '') { //Empty color it will be true
+
+            if (squares[i + width].style.backgroundColor === '') { //Empty color it will be true
                 squares[i + width].style.backgroundColor = squares[i].style.backgroundColor; //Passing the color to the empty box. 
                 squares[i].style.backgroundColor = '';
                 const firstRow = [0, 1, 2, 3, 4, 5, 6, 7];
@@ -108,14 +108,14 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         }
 
-    } 
+    }
 
     // Checking for matches 
     // Check for row of Four
 
     function checkRowForFour() {
         for (i = 0; i < 60; i++) { //Max squares is 64 so we are using 60 as it will check if there are 4 matches checking from 61 to 64
-            let rowOfFour = [i, i+1, i+2, i+3]; // Defines the row 
+            let rowOfFour = [i, i + 1, i + 2, i + 3]; // Defines the row 
             let decidedColor = squares[i].style.backgroundColor; // Grab the color of the first square and assign it
             const isBlank = squares[i].style.backgroundColor === ''; //Blank space if it's empty it equals true
 
@@ -137,8 +137,8 @@ document.addEventListener('DOMContentLoaded', () => {
     // Check for column of Four
 
     function checkColumnForFour() {
-        for (i = 0; i < 47; i++) { 
-            let columnOfFour = [i, i + width, i + width*2, i+width*3]; // Defines the row 
+        for (i = 0; i < 47; i++) {
+            let columnOfFour = [i, i + width, i + width * 2, i + width * 3]; // Defines the row 
             let decidedColor = squares[i].style.backgroundColor; // Grab the color of the firs square and assign it
             const isBlank = squares[i].style.backgroundColor === ''; //Blank space if it's empty it equals true
 
@@ -208,8 +208,4 @@ document.addEventListener('DOMContentLoaded', () => {
         checkRowForThree();
         checkColumnForThree();
     }, 100)
-
-
-
-
 })
