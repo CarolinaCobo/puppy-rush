@@ -86,8 +86,65 @@ document.addEventListener('DOMContentLoaded', () => {
         } else squares[squareIdBeingDragged].style.backgroundColor = colorBeingDragged; //Color back to the original square
     }
 
+    // Drop puppies once some have been cleared
+
+    function moveDown() {
+        for (i = 0; i < 55; i++) {  // Wants to check the squares below
+        
+            if(squares[i + width].style.backgroundColor === '') { //Empty color it will be true
+                squares[i + width].style.backgroundColor = squares[i].style.backgroundColor; //Passing the color to the empty box. 
+                squares[i].style.backgroundColor = '';
+            }
+        }
+
+    } 
+
+
+
     // Checking for matches 
-        // Check for row of three 
+    // Check for row of Four
+
+    function checkRowForFour() {
+        for (i = 0; i < 60; i++) { //Max squares is 64 so we are using 60 as it will check if there are 4 matches checking from 61 to 64
+            let rowOfFour = [i, i+1, i+2, i+3]; // Defines the row 
+            let decidedColor = squares[i].style.backgroundColor; // Grab the color of the first square and assign it
+            const isBlank = squares[i].style.backgroundColor === ''; //Blank space if it's empty it equals true
+
+            const notValid = [5, 6, 7, 13, 14, 15, 21, 22, 23, 29, 30, 31, 37, 38, 39, 45, 46, 47, 53, 54, 55]; // I don't what the row of 4 to start
+            if (notValid.includes(i)) continue;
+
+            if (rowOfFour.every(index => squares[index].style.backgroundColor === decidedColor && !isBlank)) {  //Every index is equal to the color of the first square it will execute
+                score += 4; // Add 4 points when we find 3 colors
+                rowOfFour.forEach(index => {
+                    squares[index].style.backgroundColor = '' // If it matches will give it an empty color
+                })
+            }
+        }
+    }
+
+    checkRowForFour();
+
+    // Check for column of Four
+
+    function checkColumnForFour() {
+        for (i = 0; i < 47; i++) { 
+            let columnOfFour = [i, i + width, i + width*2, i+width*3]; // Defines the row 
+            let decidedColor = squares[i].style.backgroundColor; // Grab the color of the firs square and assign it
+            const isBlank = squares[i].style.backgroundColor === ''; //Blank space if it's empty it equals true
+
+            if (columnOfFour.every(index => squares[index].style.backgroundColor === decidedColor && !isBlank)) {  //Every index is equal to the color of the first square it will execute
+                score += 4; // Add 4 points when we find 3 colors
+                columnOfFour.forEach(index => {
+                    squares[index].style.backgroundColor = '' // If it matches will give it an empty color
+                })
+            }
+        }
+    }
+
+    checkColumnForFour();
+
+
+    // Check for row of three 
 
     function checkRowForThree() {
         for (i = 0; i < 61; i++) { //Max squares is 64 so we are using 61 as it will check if there are 3 matches checking from 61 to 64
@@ -99,7 +156,7 @@ document.addEventListener('DOMContentLoaded', () => {
             if (notValid.includes(i)) continue;
 
             if (rowOfThree.every(index => squares[index].style.backgroundColor === decidedColor && !isBlank)) {  //Every index is equal to the color of the first square it will execute
-                score +=3; // Add 3 points when we find 3 colors
+                score += 3; // Add 3 points when we find 3 colors
                 rowOfThree.forEach(index => {
                     squares[index].style.backgroundColor = '' // If it matches will give it an empty color
                 })
@@ -107,34 +164,37 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-checkRowForThree ();
+    checkRowForThree();
 
- // Check for column of three 
+    // Check for column of three 
 
- function checkColumnForThree() {
-    for (i = 0; i < 47; i++) { //3 squares multiplied 7
-        let columnOfThree = [i, i+width, i+width*2]; // Defines the row 
-        let decidedColor = squares[i].style.backgroundColor; // Grab the color of the firs square and assign it
-        const isBlank = squares[i].style.backgroundColor === ''; //Blank space if it's empty it equals true
+    function checkColumnForThree() {
+        for (i = 0; i < 47; i++) { //3 squares multiplied 7
+            let columnOfThree = [i, i + width, i + width * 2]; // Defines the row 
+            let decidedColor = squares[i].style.backgroundColor; // Grab the color of the firs square and assign it
+            const isBlank = squares[i].style.backgroundColor === ''; //Blank space if it's empty it equals true
 
-        if (columnOfThree.every(index => squares[index].style.backgroundColor === decidedColor && !isBlank)) {  //Every index is equal to the color of the first square it will execute
-            score +=3; // Add 3 points when we find 3 colors
-            columnOfThree.forEach(index => {
-                squares[index].style.backgroundColor = '' // If it matches will give it an empty color
-            })
+            if (columnOfThree.every(index => squares[index].style.backgroundColor === decidedColor && !isBlank)) {  //Every index is equal to the color of the first square it will execute
+                score += 3; // Add 3 points when we find 3 colors
+                columnOfThree.forEach(index => {
+                    squares[index].style.backgroundColor = '' // If it matches will give it an empty color
+                })
+            }
         }
     }
-}
 
-checkColumnForThree ();
+    checkColumnForThree();
 
 
-// TO DO HERE!! > ADD BUTTON TO ACTIVATE THIS FUNCTIONALITY (CHECK TETRIS GAME)
+    // TO DO HERE!! > ADD BUTTON TO ACTIVATE THIS FUNCTIONALITY (CHECK TETRIS GAME)
 
-window.setInterval(function() {  // Invokes the function constantly with a 100 milliseconds interval 
-    checkRowForThree();
-    checkColumnForThree ();
-}, 100)
+    window.setInterval(function () {  // Invokes the function constantly with a 100 milliseconds interval 
+        moveDown()
+        checkRowForFour();
+        checkColumnForFour();
+        checkRowForThree();
+        checkColumnForThree();
+    }, 100)
 
 
 
