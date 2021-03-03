@@ -3,7 +3,6 @@
 document.addEventListener('DOMContentLoaded', () => {
     const grid = document.querySelector('.grid');
     const scoreDisplay = document.getElementById('score')
-    const startBtn =  document.getElementById()
     const width = 8;
     const squares = [];
     let score = 0;
@@ -211,7 +210,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }, 100)
 
 
-startBtn.addEventListener
+
 
 
 
@@ -219,5 +218,3 @@ startBtn.addEventListener
 
 
 })
-
-
