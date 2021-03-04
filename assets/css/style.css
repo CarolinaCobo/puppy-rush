@@ -12,13 +12,9 @@ body {
   
 }
 
-html {
-  font-size: 18px;
-  line-height: 1.4;
-}
 
 body {
-  font-weight: 600;
+  font-weight: 500;
   background-image: linear-gradient(to right, #7f53ac 0, #657ced 100%);
   color: black;
 }
@@ -26,8 +22,6 @@ body {
 a {
   color: inherit;
 }
-
-
 
 
 
