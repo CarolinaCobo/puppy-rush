@@ -1,16 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,500;1,100&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+
+}
+
+
 html,
 body {
   height: 100%;
+  
 }
 
-/* html {
+html {
   font-size: 18px;
   line-height: 1.4;
-} */
+}
 
 body {
-  font-family: apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans,
-    Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
   font-weight: 600;
   background-image: linear-gradient(to right, #7f53ac 0, #657ced 100%);
   color: black;
@@ -25,8 +32,24 @@ a {
 
 
 /* How to play Modal  */
+.btn-modal {
+    background-color: white;
+    padding: 1em 1.5em;
+    border-radius: 1rem;
+    text-decoration: none;
+    width:10em; 
+    text-align:center;
+    line-height:1.1em;
+    font-size: 1.1em;
+    border: none;
+  }
+  
+.btn-modal:hover{
+    background-color: #c7a1f5;
+}
 
-.modal-window {
+
+.modal-window { 
   position: fixed;
   background-color: rgba(255, 255, 255, 0.25);
   top: 0;
@@ -39,77 +62,21 @@ a {
   pointer-events: none;
   transition: all 0.3s;
 }
-.modal-window:target {
-  visibility: visible;
-  opacity: 1;
-  pointer-events: auto;
-}
-
-.modal-window > div {
-  width: 400px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  padding: 2em;
-  background: white;
-}
-header {
-  font-weight: bold;
-}
-h1 {
-  font-size: 150%;
-  margin: 0 0 15px;
-}
-
-.modal-close {
-  color: #aaa;
-  line-height: 50px;
-  font-size: 80%;
-  position: absolute;
-  right: 0;
-  text-align: center;
-  top: 0;
-  width: 70px;
-  text-decoration: none;
-}
-.modal-close :hover {
-  color: black;
-}
-
-/* Demo Styles */
 
 
-.container {
+
+/* Container Styles */
+ 
+.container-buttons {
   display: grid;
   justify-content: center;
   align-items: center;
   height: 100vh;
 }
 
-.modal-window > div {
-  border-radius: 1rem;
-}
 
-.modal-window div:not(:last-of-type) {
-  margin-bottom: 15px;
-}
 
-small {
-  color: lightgray;
-}
 
-.btn-modal {
-  background-color: white;
-  padding: 1em 1.5em;
-  border-radius: 1rem;
-  text-decoration: none;
-  /* width:120px;
-  height:50px; */
-  text-align:center;
-  line-height:1.1em;
-  font-size:1.1em;
-}
 
 
 
