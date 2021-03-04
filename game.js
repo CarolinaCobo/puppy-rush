@@ -1,4 +1,4 @@
-// This code has been obtained from Code with Ania Kubow Tutorial for Candy Crush with changes of my own. 
+// This code has been obtained following  Ania's Kubow Tutorial for Candy Crush with changes of my own. 
 
 document.addEventListener('DOMContentLoaded', () => {
     const grid = document.querySelector('.grid');
@@ -212,9 +212,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-
-
-
-
+    document.getElementById("start").addEventListener("click", () => { // Reset the score to 0
+        score = 0;
+        scoreDisplay.innerHTML = score;
+    })
 
 })

@@ -1,24 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Puppy Rush</title>
-    <link rel="stylesheet" href="assets/css/style.css">
-    <script src="assets/javascript/game.js" charset="utf-8"></script>
-    
-    
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <script src="game.js" charset="utf-8"></script>
+  </head>
+  <body>
 
-</head>
-<body>
+    <!-- Background image -->
+    <div class="background-image">
+        <div class="game-name">
+            <h1>Puppy Rush</h1>
+        </div>
+     
+    <!-- Beginning instructions modal -->
+    <div class="container">
+        <div>
+          <a class="btn-modal" href="#open-modal">How to play</a>
 
-    <button id="btnStart">Start</button>
-   
-    <div class="score-board">
-        <h3>Score</h3>
+       
+            <a class="btn-modal" href="">Start</a>
+          
+        </div>
+      </div>
+      <div id="open-modal" class="modal-window">
+        <div>
+          <a href="#" title="Close" class="modal-close">Close</a>
+          <div>
+              
+                  <li>Press the start button</li>
+                  <li>Find the matching puppies</li>
+                  <li>You can move the puppies horizontally and vertically</li>
+              
+          </div>
+
+          
+          
+      </div>
+
+
+      <!-- Game section start -->
+     
+
+     <!-- End instructions modal --> 
+     <section>
+         <div class="score-board">
+         <h3>Score</h3>
         <h1 id="score"></h1>
+      </div>
+       
+       <div class="grid"></div>
+      <button id="start" type="button">Start</button>
     </div>
-   <div class="grid"></div>
-
-</body>
-</html>
+    </section>
+  </body>
+</html> 
