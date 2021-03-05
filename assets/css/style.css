@@ -1,17 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,500;1,100&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,500;1,100&display=swap");
 
 * {
-    font-family: 'Poppins', sans-serif;
-
+  font-family: "Poppins", sans-serif;
 }
 
-
-html,
+/* html,
 body {
   height: 100%;
-  
-}
-
+} */
 
 body {
   font-weight: 500;
@@ -23,69 +19,61 @@ a {
   color: inherit;
 }
 
-
-
 /* How to play Modal  */
-.btn-modal {
-    background-color: white;
-    padding: 1em 1.5em;
-    border-radius: 1rem;
-    text-decoration: none;
-    width:10em; 
-    text-align:center;
-    line-height:1.1em;
-    font-size: 1.1em;
-    border: none;
-  }
+
+.container {
   
-.btn-modal:hover{
-    background-color: #c7a1f5;
-}
-
-
-.modal-window { 
-  position: fixed;
-  background-color: rgba(255, 255, 255, 0.25);
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 999;
-  visibility: hidden;
-  opacity: 0;
-  pointer-events: none;
-  transition: all 0.3s;
-}
-
-
-
-/* Container Styles */
- 
-.container-buttons {
-  display: grid;
-  justify-content: center;
+display: grid;  
+justify-content: center;
   align-items: center;
   height: 100vh;
+  position: relative;
 }
 
+.btn-modal {
+  background-color: white;
+  padding: 1em 1.5em;
+  border-radius: 1rem;
+  text-decoration: none;
+  text-align: center;
+  line-height: 1.1em;
+  font-size: 1.1em;
+  border: none;
+  width: 200px;
+}
 
+.btn-modal:hover {
+  background-color: #c7a1f5;
+}
 
+.modal-content {
+  background-color: #fefefe;
+  padding: 20px;
+  border-radius: 1rem;
 
-
-
+  width: 50%;
+  height: 150px;
+  overflow: auto;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
 
 /* Game grid */
 .grid {
-    height: 560px;
-    width: 560px;
-    display: flex;
-    flex-wrap: wrap;
-  }
-  
-  .grid div {
-    height: 70px;
-    width: 70px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-  }
+  height: 560px;
+  width: 560px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.grid div {
+  height: 70px;
+  width: 70px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
