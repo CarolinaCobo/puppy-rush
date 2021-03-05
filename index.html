@@ -1,3 +1,5 @@
+<!-- All code in this section is my own -->
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -8,11 +10,12 @@
   </head>
 
   <body>
-    <main class="wrapper">
-      <div class="game-name">
+
+    <div class="game-name">
         <h1>Puppy Rush</h1>
       </div>
 
+    <main id="showGame" class="wrapper">
       <div class="modal">
         <div class="buttons">
           <div id="inner-modal" class="hidden">
@@ -25,23 +28,23 @@
           <button type="button" id="instructions" class="btn-modal">
             How to play
           </button>
-          <button type="button" class="btn-modal">Play</button>
+          <button type="button" id="playButton" class="btn-modal">Play</button>
         </div>
       </div>
+    </main>
 
-      <!-- End instructions modal -->
-
+     <!-- End instructions modal -->
       <!-- Start game -->
-      <section>
+      <section id="show-game" >
         <div class="score-board">
           <h3>Score</h3>
           <h1 id="score"></h1>
         </div>
 
         <div class="grid"></div>
-        <button id="start" type="button">Start</button>
+        
       </section>
-    </main>
+  
     <script src="game.js" charset="utf-8"></script>
   </body>
 </html>

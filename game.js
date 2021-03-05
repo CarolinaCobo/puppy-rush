@@ -199,7 +199,6 @@ document.addEventListener('DOMContentLoaded', () => {
     checkColumnForThree();
 
 
-    // TO DO HERE!! > ADD BUTTON TO ACTIVATE THIS FUNCTIONALITY (CHECK TETRIS GAME)
 
     window.setInterval(function () {  // Invokes the function constantly with a 100 milliseconds interval 
         moveDown()
@@ -210,27 +209,32 @@ document.addEventListener('DOMContentLoaded', () => {
     }, 100)
 
 
-
-
-    document.getElementById("start").addEventListener("click", () => { // Reset the score to 0
-        score = 0;
-        scoreDisplay.innerHTML = score;
-    })
-
-
-})
-
-
-const modal = document.getElementById("modal");
+// Help obtained in Codú community 
 
 const instructionsButton = document.getElementById("instructions");
 
 const instructionsModal = document.getElementById("inner-modal");
 
 
-
-// From Codú community 
-
-instructionsButton.addEventListener("click", () => {
+// Open the modal
+instructionsButton.addEventListener('click', () => {
     instructionsModal.classList.toggle("hidden");
 })
+
+const playButton = document.getElementById('playButton')
+
+const gameModal = document.getElementById('showGame')
+
+playButton.addEventListener('click', () => {
+    score = 0;
+    scoreDisplay.innerHTML = score;
+    gameModal.classList.toggle("hidden");
+
+})
+
+
+
+
+})
+
+
