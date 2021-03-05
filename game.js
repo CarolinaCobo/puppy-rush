@@ -126,7 +126,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 score += 4; // Add 4 points when we find 3 colors
                 scoreDisplay.innerHTML = score;
                 rowOfFour.forEach(index => {
-                    squares[index].style.backgroundImage = '' // If it matches will give it an empty color
+                    squares[index].style.backgroundImage = ''; // If it matches will give it an empty color
                 })
             }
         }
@@ -146,7 +146,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 score += 4; // Add 4 points when we find 3 colors
                 scoreDisplay.innerHTML = score;
                 columnOfFour.forEach(index => {
-                    squares[index].style.backgroundImage = '' // If it matches will give it an empty color
+                    squares[index].style.backgroundImage = ''; // If it matches will give it an empty color
                 })
             }
         }
@@ -217,5 +217,20 @@ document.addEventListener('DOMContentLoaded', () => {
         scoreDisplay.innerHTML = score;
     })
 
+
 })
 
+
+const modal = document.getElementById("modal");
+
+const instructionsButton = document.getElementById("instructions");
+
+const instructionsModal = document.getElementById("inner-modal");
+
+
+
+// From Codú community 
+
+instructionsButton.addEventListener("click", () => {
+    instructionsModal.classList.toggle("hidden");
+})

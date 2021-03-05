@@ -5,45 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Puppy Rush</title>
     <link rel="stylesheet" href="assets/css/style.css" />
-    
-    <script src="game.js" charset="utf-8"></script>
   </head>
-  <body>
 
-    <!-- Background image -->
-    <div class="background-image">
-        <div class="game-name">
-            <h1>Puppy Rush</h1>
-        </div>
-     
-    <!-- Beginning instructions modal. Code from Timothy Long with some changes. -->
-    <div class="container-buttons">
-        <div>
-          <button type="button" class="btn-modal">How to play</button>
+  <body>
+    <main class="wrapper">
+      <div class="game-name">
+        <h1>Puppy Rush</h1>
+      </div>
+
+      <div class="modal">
+        <div class="buttons">
+          <div id="inner-modal" class="hidden">
+            <ul>
+              <li>Press the start button</li>
+              <li>Find the matching puppies</li>
+              <li>You can move the puppies horizontally and vertically</li>
+            </ul>
+          </div>
+          <button type="button" id="instructions" class="btn-modal">
+            How to play
+          </button>
           <button type="button" class="btn-modal">Play</button>
         </div>
       </div>
-      <div id="open-modal" class="modal-window">
-        <div class="instructions">
-                  <li>Press the start button</li>
-                  <li>Find the matching puppies</li>
-                  <li>You can move the puppies horizontally and vertically</li>
+
+      <!-- End instructions modal -->
+
+      <!-- Start game -->
+      <section>
+        <div class="score-board">
+          <h3>Score</h3>
+          <h1 id="score"></h1>
         </div>
 
-
-      <!-- Game section start -->
-     
-
-     <!-- End instructions modal --> 
-     <section>
-         <div class="score-board">
-         <h3>Score</h3>
-        <h1 id="score"></h1>
-      </div>
-       
-       <div class="grid"></div>
-      <button id="start" type="button">Start</button>
-    </div>
-    </section>
+        <div class="grid"></div>
+        <button id="start" type="button">Start</button>
+      </section>
+    </main>
+    <script src="game.js" charset="utf-8"></script>
   </body>
-</html> 
+</html>
