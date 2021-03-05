@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,500;1,100&display=swap");
 
+
 html {
   box-sizing: border-box;
   font-size: 16px;
@@ -52,7 +53,7 @@ a {
   color: inherit;
 }
 
-/* How to play Modal  */
+/* Button  */
 
 .btn-modal {
   background-color: white;
@@ -74,11 +75,12 @@ a {
     position: relative;
   }
 
-/* ------------------------------ */
+/* Modal */
 
 .wrapper {
   position: relative;
   min-height: 100vh;
+  
 }
 
 .modal {
@@ -104,19 +106,17 @@ a {
 }
 
 
-
+/* Game grid - Ania Kubow tutorial, adjusted the height and width to make the squares bigger */
 .grid {
-  height: 560px;
-  width: 560px;
+  height: 800px;
+  width: 800px;
   display: flex;
   flex-wrap: wrap;
 }
 
-
-/* Game grid */
 .grid div {
-  height: 70px;
-  width: 70px;
+  height: 100px;
+  width: 100px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
