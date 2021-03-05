@@ -1,5 +1,3 @@
-// This code has been obtained following  Ania's Kubow Tutorial for Candy Crush with changes of my own. 
-
 document.addEventListener('DOMContentLoaded', () => {
     const grid = document.querySelector('.grid');
     const scoreDisplay = document.getElementById('score')
@@ -209,32 +207,30 @@ document.addEventListener('DOMContentLoaded', () => {
     }, 100)
 
 
-// Help obtained in Codú community 
+    // Help obtained in Codú community 
 
-const instructionsButton = document.getElementById("instructions");
+    const instructionsButton = document.getElementById("instructions");
 
-const instructionsModal = document.getElementById("inner-modal");
+    const instructionsModal = document.getElementById("inner-modal");
 
 
-// Open the modal
-instructionsButton.addEventListener('click', () => {
-    instructionsModal.classList.toggle("hidden");
+    // Open the modal
+    instructionsButton.addEventListener('click', () => {
+        instructionsModal.classList.toggle("hidden");
+    })
+
+    const playButton = document.getElementById('playButton')
+
+    const gameModal = document.getElementById('showGame')
+
+    playButton.addEventListener('click', () => {
+        score = 0;
+        scoreDisplay.innerHTML = score;
+        gameModal.classList.toggle("hidden");
+
+    })
+
+
+
+
 })
-
-const playButton = document.getElementById('playButton')
-
-const gameModal = document.getElementById('showGame')
-
-playButton.addEventListener('click', () => {
-    score = 0;
-    scoreDisplay.innerHTML = score;
-    gameModal.classList.toggle("hidden");
-
-})
-
-
-
-
-})
-
-

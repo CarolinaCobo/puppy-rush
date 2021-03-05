@@ -10,13 +10,13 @@
   </head>
 
   <body>
-
     <div class="game-name">
-        <h1>Puppy Rush</h1>
-      </div>
+      <h1>Puppy Rush</h1>
+    </div>
 
-    <main id="showGame" class="wrapper">
-      <div class="modal">
+    <main class="wrapper">
+      <!-- First screen hack -->
+      <div id="showGame" class="modal">
         <div class="buttons">
           <div id="inner-modal" class="hidden">
             <ul>
@@ -31,20 +31,18 @@
           <button type="button" id="playButton" class="btn-modal">Play</button>
         </div>
       </div>
-    </main>
-
-     <!-- End instructions modal -->
-      <!-- Start game -->
-      <section id="show-game" >
+      <!-- End First screen hack -->
+      <section>
         <div class="score-board">
           <h3>Score</h3>
           <h1 id="score"></h1>
         </div>
 
         <div class="grid"></div>
-        
       </section>
-  
+    </main>
+
+
     <script src="game.js" charset="utf-8"></script>
   </body>
 </html>
