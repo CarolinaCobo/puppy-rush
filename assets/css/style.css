@@ -3,7 +3,7 @@
 
 html {
   box-sizing: border-box;
-  font-size: 16px;
+  
 }
 
 *,
@@ -57,14 +57,14 @@ a {
 
 .btn-modal {
   background-color: white;
-  padding: 1em 1.5em;
+  padding: 20px;
   border-radius: 1rem;
   text-decoration: none;
   text-align: center;
-  line-height: 1.1em;
-  font-size: 1.1em;
+  font-size: 1.5em;
   border: none;
-  width: 200px;
+  width: 250px;
+
 }
 
 .btn-modal:hover {
@@ -112,6 +112,10 @@ a {
   width: 800px;
   display: flex;
   flex-wrap: wrap;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+
 }
 
 .grid div {
@@ -125,3 +129,22 @@ a {
 .hidden {
   display: none;
 }
+
+.btn-game {
+        background-color: white;
+        padding: 20px;
+        border-radius: 1rem;
+        text-decoration: none;
+        text-align: center;
+        font-size: 1.5em;
+        border: none;
+        width: 250px;
+      }
+      
+      .btn-game:hover {
+        background-color: #c7a1f5;
+      }
+      
+      .game-buttons {
+          position: relative;
+        }
