@@ -114,18 +114,21 @@ a {
 .grid div {
   height: 100px;
   width: 100px;
+  background-color: grey;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
 }
 
+
+/* Hide modal */
 .hidden {
   display: none;
 }
 
 
 
-/* Contact form  */
+/* Contact form from W3Schools with some changes*/
 
 input[type=text], select, textarea {
   width: 100%;
@@ -154,30 +157,44 @@ input[type=submit] {
   cursor: pointer;
 }
 
-.contact-container {
-  border-radius: 5px;
-  /* display: block; */
-  /* margin: auto; */
- 
-}
-
 .col-75 {
   width: 75%;
   margin-top: 6px;
+  margin: 6px auto 0;
 }
 
-/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+.contact-container{
+  margin-top: 50px;
+}
+
+/* Make game and contact form responsive */
+
 @media screen and (max-width: 600px) {
   .col-75, input[type=submit] {
     width: 100%;
     margin-top: 3px;
   }
+
+  .grid {
+    height: 360px;
+    width: 360px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .grid div {
+    height: 45px;
+    width: 45px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
 }
 
 
-header {
-  position: absolute;
-}
 
 
 
