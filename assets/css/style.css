@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,500;1,100&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,500;1,100;1,300;1,500&family=Press+Start+2P&display=swap');
 
 
 html {
@@ -25,6 +24,11 @@ body {
 
 a {
   color: inherit;
+}
+
+h1 {
+  font-family: 'Press Start 2P', cursive;
+  color: white;
 }
 
 .navbar {
@@ -102,7 +106,7 @@ a {
   border-radius: 4px;
 }
 
-/* Hide modal */
+/* Hide modal. Info obtained in Codu Community */
 .hidden {
   display: none;
 }
