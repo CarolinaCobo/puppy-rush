@@ -196,8 +196,33 @@ input[type=submit] {
 
 
 
+/* Icons */
 
+.navbar {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+}
 
+.btn-icon {
+  height: 50px;
+  width: 50px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: white;
+  
 
+}
 
+svg:hover{
+  transform: scale(1.1);
+}
 
+.nav-btn {
+  
+  right:30px;
+  margin-top: -30px;
+  position: absolute;
+  float: right;
+}
