@@ -29,6 +29,7 @@ a {
 h1 {
   font-family: 'Press Start 2P', cursive;
   color: white;
+  margin-left: 10px;
 }
 
 h2, h3 {
@@ -138,32 +139,6 @@ input[type=submit] {
   margin-top: 50px;
 }
 
-/* Make game and contact form responsive */
-
-@media screen and (max-width: 600px) {
-  .col-75, input[type=submit] {
-    width: 100%;
-    margin-top: 3px;
-  }
-
-  .grid {
-    height: 360px;
-    width: 360px;
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 50px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  
-  .grid div {
-    height: 45px;
-    width: 45px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-  }
-}
 
 /* Icons */
 
@@ -196,6 +171,8 @@ svg:hover {
   padding-bottom: 50px;
 }
 
+/* Score board format */
+
 .score-board {
   background-color: white;
   padding: 5px 5px;
@@ -220,6 +197,55 @@ svg:hover {
   background-repeat: no-repeat;
   background-position: center center;
   border-radius: 4px;
+}
+
+
+/* Make game and contact form responsive */
+
+@media screen and (max-width: 600px) {
+  .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 3px;
+  }
+
+  .grid {
+    height: 360px;
+    width: 360px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .grid div {
+    height: 45px;
+    width: 45px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+
+  h1{
+    font-size:larger;
+  }
+
+  .nav-btn {
+   padding: 0;
+
+  }  
+
+  .btn-icon {
+    height: 50px;
+    width: 50px;
+    background: none;
+    cursor: pointer;
+    margin-left: 0;
+    margin-top:20px;
+ }
+
+
+
 }
 
 /* Footer from my Milestone project 1 */
