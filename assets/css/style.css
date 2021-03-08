@@ -166,7 +166,6 @@ svg:hover {
 .nav-btn {
   right:30px;
   margin-top: -65px;
-  position: absolute;
   float: right;
   padding-bottom: 50px;
 }
@@ -225,13 +224,14 @@ svg:hover {
     background-repeat: no-repeat;
     background-position: center center;
   }
-
+  /* buttons */
   h1{
     font-size:larger;
+    margin-bottom: 10px;
   }
 
   .nav-btn {
-   padding: 0;
+   margin-left: 20px;
 
   }  
 
@@ -242,6 +242,7 @@ svg:hover {
     cursor: pointer;
     margin-left: 0;
     margin-top:20px;
+    
  }
 
 
