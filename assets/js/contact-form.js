@@ -1,5 +1,4 @@
     // Code from EmailJS documentation 
-
     const btn = document.getElementById('button');
 
     document.getElementById('form')
@@ -12,11 +11,10 @@
        emailjs.sendForm(serviceID, templateID, this)
         .then(() => {
           btn.value = 'Send';
-          alert('Sent! Thanks for your message will get back to you shortly : ');
+          alert('Sent! Thanks for your message will get back to you shortly :) ');
         }, (err) => {
           btn.value = 'Send Email';
           alert(JSON.stringify(err));
         });
     });
 
-   
