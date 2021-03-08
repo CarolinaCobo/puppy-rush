@@ -221,3 +221,18 @@ svg:hover {
   background-position: center center;
   border-radius: 4px;
 }
+
+/* Footer from my Milestone project 1 */
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-weight: 100;
+
+}
