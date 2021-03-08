@@ -31,11 +31,18 @@ h1 {
   color: white;
 }
 
+h2, h3 {
+  font-family: 'Press Start 2P', cursive;
+  color: black;
+  text-align: center;
+ 
+}
+
 .navbar {
   max-width: 1400px;
 }
 
-/* Button  */
+/* Home page buttons */
 
 .btn-modal {
   background-color: white;
@@ -85,26 +92,7 @@ h1 {
   background: #fff;
 }
 
-/* Game grid - Ania Kubow tutorial, adjusted the height and width to make the squares bigger */
-.grid {
-  height: 800px;
-  width: 800px;
-  display: flex;
-  flex-wrap: wrap;
-  margin-top: 50px;
-  margin-left: auto;
-  margin-right: auto;
-}
 
-.grid div {
-  height: 100px;
-  width: 100px;
-  background-color:rgb(255, 255, 255, 0.1);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-  border-radius: 4px;
-}
 
 /* Hide modal. Info obtained in Codu Community */
 .hidden {
@@ -196,7 +184,7 @@ input[type=submit] {
 }
 
 /* FreeCodeCamp example */
-svg:hover{
+svg:hover {
   transform: scale(1.1);
 }
 
@@ -208,4 +196,28 @@ svg:hover{
   padding-bottom: 50px;
 }
 
+.score-board {
+  background-color: white;
+  padding: 5px 5px;
+}
 
+/* Game grid - Ania Kubow tutorial, adjusted the height and width to make the squares bigger */
+.grid {
+  height: 800px;
+  width: 800px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.grid div {
+  height: 100px;
+  width: 100px;
+  background-color:rgb(255, 255, 255, 0.1);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  border-radius: 4px;
+}
