@@ -197,7 +197,96 @@ svg:hover {
   border-radius: 4px;
 }
 
+
+
 /* Make game and contact form responsive */
+
+@media screen and (max-width: 1024px) {
+  h1 {
+    font-size: larger;
+    margin-bottom: 10px;
+  }
+
+  .col-75,
+  input[type="submit"] {
+    width: 100%;
+    margin-top: 3px;
+    border-radius: 4px;
+  }
+
+  .grid {
+    height: 800px;
+    width: 800px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .grid div {
+    height: 100px;
+    width: 100px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  /* Nabvar buttons */
+  .nav-btn {
+    margin-left: 40px;
+  }
+
+  .btn-icon {
+    height: 50px;
+    width: 50px;
+    background: none;
+    cursor: pointer;
+    margin-left: 0;
+    margin-top: 20px;
+  }
+
+  /* Modal buttons  */
+  .buttons {
+    position: absolute;
+    margin-left: 65px;
+  }
+
+  .btn-modal {
+    margin-top: 20px;
+  }
+
+  .contact-container {
+    overflow: hidden;
+    margin-left: 20px;
+    width: 90%;
+  }
+
+  #inner-modal {
+    width: 100%;
+    position: absolute;
+    left: -30px;
+    top: -120px;
+    color: #000;
+    padding: 5px;
+    border-radius: 20px;
+    background: #fff;
+  }
+
+  ul {
+    margin: 0;
+  }
+
+  h3 {
+    font-family: "Press Start 2P", cursive;
+    color: black;
+    text-align: center;
+    margin-left: 130px;
+  }
+}
+
+
+
+
 
 @media screen and (max-width: 600px) {
 
@@ -274,13 +363,13 @@ svg:hover {
   ul {
     margin: 0;
   }
-}
 
-h3 {
-  font-family: "Press Start 2P", cursive;
-  color: black;
-  text-align: center;
-  margin-left: 130px;
+  h3 {
+    font-family: "Press Start 2P", cursive;
+    color: black;
+    text-align: center;
+    margin-left: 130px;
+  }
 }
 
 /* Code from my Milestone project 1 with changes */
