@@ -39,9 +39,12 @@ h2, h3 {
  
 }
 
+/* Nabvar max width */
 .navbar {
   max-width: 1400px;
+  margin: auto;
 }
+
 
 /* Home page buttons */
 
@@ -93,8 +96,6 @@ h2, h3 {
   background: #fff;
 }
 
-
-
 /* Hide modal. Info obtained in Codu Community */
 .hidden {
   display: none;
@@ -129,24 +130,25 @@ input[type=submit] {
   cursor: pointer;
 }
 
+
+.contact-container{
+
+  max-width: 1400px;
+  margin: 100px auto;
+}
 .col-75 {
   width: 75%;
   margin-top: 6px;
   margin: 6px auto 0;
 }
 
-.contact-container{
-  margin-top: 50px;
-}
-
-
 /* Icons */
 
-.navbar {
+/* .navbar {
   display: flex;
   flex-wrap: wrap;
   position: relative;
-}
+} */
 
 .btn-icon {
   height: 50px;
@@ -175,7 +177,11 @@ svg:hover {
 .score-board {
   background-color: white;
   padding: 5px 5px;
+
+
 }
+
+
 
 /* Game grid - Ania Kubow tutorial, adjusted the height and width to make the squares bigger */
 .grid {
@@ -197,6 +203,7 @@ svg:hover {
   background-position: center center;
   border-radius: 4px;
 }
+
 
 
 /* Make game and contact form responsive */
@@ -242,10 +249,23 @@ svg:hover {
     cursor: pointer;
     margin-left: 0;
     margin-top:20px;
-    
  }
+ /* Modal buttons  */
+  .buttons {
+    position: absolute;
+    margin-left: 65px;
+  } 
+
+  .btn-modal {
+    margin-top: 20px;
+  }
 
 
+  .contact-container {
+    overflow: hidden;
+    margin-left: 20px;
+    width: 90%;
+  }
 
 }
 
@@ -263,3 +283,7 @@ svg:hover {
   font-weight: 100;
 
 }
+
+
+
+
