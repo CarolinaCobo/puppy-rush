@@ -1,3 +1,5 @@
+// Code from Ana Kubow Candy Crush tutorial with changes of my own.
+
 document.addEventListener('DOMContentLoaded', () => {
     const grid = document.querySelector('.grid');
     const scoreDisplay = document.getElementById('score')
@@ -10,7 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
         'url(assets/images/yellow-puppy.png)',
         'url(assets/images/orange-puppy.png)',
         'url(assets/images/purple-puppy.png)',
-        'url(assets/images/green-puppy.png)', //
+        'url(assets/images/green-puppy.png)', 
         'url(assets/images/blue-puppy.png)'
     ];
 
@@ -197,7 +199,6 @@ document.addEventListener('DOMContentLoaded', () => {
     checkColumnForThree();
 
 
-
     window.setInterval(function () {  // Invokes the function constantly with a 100 milliseconds interval 
         moveDown()
         checkRowForFour();
@@ -207,12 +208,11 @@ document.addEventListener('DOMContentLoaded', () => {
     }, 100)
 
 
-    // Help obtained in Codú community 
+    // Codú community helped me with this piece of code.
 
     const instructionsButton = document.getElementById("instructions");
 
     const instructionsModal = document.getElementById("inner-modal");
-
 
     // Open the modal
     instructionsButton.addEventListener('click', () => {
@@ -229,8 +229,6 @@ document.addEventListener('DOMContentLoaded', () => {
         gameModal.classList.toggle("hidden");
 
     })
-
-
 })
 
 
