@@ -203,6 +203,7 @@ svg:hover {
   input[type="submit"] {
     width: 100%;
     margin-top: 3px;
+    border-radius: 4px;
   }
 
   .grid {
@@ -250,6 +251,21 @@ svg:hover {
     overflow: hidden;
     margin-left: 20px;
     width: 90%;
+  }
+
+  #inner-modal {
+    width: 100%;
+    position: absolute;
+    left: -30px;
+    top: -120px;
+    color: #000;
+    padding: 5px;
+    border-radius: 20px;
+    background: #fff;
+  }
+
+  ul {
+    margin: 0;
   }
 }
 
