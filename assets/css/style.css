@@ -30,11 +30,18 @@ h1 {
   margin-left: 10px;
 }
 
-h2,
+h2
+{
+  font-family: "Press Start 2P", cursive;
+  color: black;
+  text-align: center;
+}
+
 h3 {
   font-family: "Press Start 2P", cursive;
   color: black;
   text-align: center;
+  margin-left: 150px;
 }
 
 /* Nabvar max width */
@@ -267,6 +274,13 @@ svg:hover {
   ul {
     margin: 0;
   }
+}
+
+h3 {
+  font-family: "Press Start 2P", cursive;
+  color: black;
+  text-align: center;
+  margin-left: 130px;
 }
 
 /* Code from my Milestone project 1 with changes */
