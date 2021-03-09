@@ -155,7 +155,7 @@ svg:hover {
 }
 
 .nav-btn {
-  right: 30px;
+  margin-right: 20px;
   margin-top: -65px;
   float: right;
   padding-bottom: 50px;
