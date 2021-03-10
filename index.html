@@ -2,92 +2,65 @@
 
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Puppy Rush</title>
-    <link rel="stylesheet" href="assets/css/style.css" />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="assets/favicon/favicon-32x32.png"
-    />
-  </head>
 
-  <body>
-    <div class="navbar">
-      <h1>Puppy Rush</h1>
-      <div class="nav-btn">
-        <a href="index.html">
-          <button class="btn-icon">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
-              />
-            </svg>
-          </button>
-        </a>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Puppy Rush</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png" />
+</head>
 
-        <a href="contact.html">
-          <button class="btn-icon">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"
-              />
-            </svg>
-          </button>
-        </a>
+<body>
+  <div class="navbar">
+    <h1>Puppy Rush</h1>
+    <div class="nav-btn">
+      <!-- Onclick function from Mdn documentation -->
+      <button class="btn-icon" onclick="window.location.href = 'index.html';">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+        </svg>
+      </button>
+      <button class="btn-icon" onclick="window.location.href = 'contact.html';">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8" />
+        </svg>
+      </button>
+    </div>
+  </div>
+  <main class="wrapper">
+    <!-- First screen hack -->
+    <div id="showGame" class="modal">
+      <div class="buttons">
+        <div id="inner-modal" class="hidden">
+          <ul>
+            <li>Press the start button</li>
+            <li>Find the matching puppies</li>
+            <li>You can move the puppies horizontally and vertically</li>
+          </ul>
+        </div>
+        <button type="button" id="playButton" class="btn-modal">Play</button>
+        <button type="button" id="instructions" class="btn-modal">
+          How to play
+        </button>
       </div>
     </div>
-
-    <main class="wrapper">
-      <!-- First screen hack -->
-      <div id="showGame" class="modal">
-        <div class="buttons">
-          <div id="inner-modal" class="hidden">
-            <ul>
-              <li>Press the start button</li>
-              <li>Find the matching puppies</li>
-              <li>You can move the puppies horizontally and vertically</li>
-            </ul>
-          </div>
-          <button type="button" id="playButton" class="btn-modal">Play</button>
-          <button type="button" id="instructions" class="btn-modal">
-            How to play
-          </button>
-        </div>
+    <!-- End First screen hack -->
+    <section>
+      <div class="score-board">
+        <h3>Score</h3>
+        <h2 id="score"> </h2>
       </div>
-      <!-- End First screen hack -->
-      <section>
-        <div class="score-board">
-          <h3>Score</h3>
-          <h2 id="score"></h2>
-        </div>
 
-        <div class="grid"></div>
-      </section>
-    </main>
+      <div class="grid"></div>
+    </section>
+  </main>
 
-    <script type="text/javascript" src="game.js" language="javascript" charset="utf-8"></script>
-    <footer class="footer">
-      <div class="copyright">2021 Copyright: Carolina Cobo</div>
-    </footer>
-  </body>
+  <script src="game.js" charset="UTF-8"></script>
+  <footer class="footer">
+    <div class="copyright">2021 Copyright: Carolina Cobo</div>
+  </footer>
+</body>
+
 </html>
