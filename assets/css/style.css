@@ -25,24 +25,24 @@ a {
   text-decoration: none;
 }
 
+p {
+  font-family: "Press Start 2P", cursive;
+  font-size: 20px;
+  color: black;
+  text-align: center;
+}
+
 h1 {
   font-family: "Press Start 2P", cursive;
   color: white;
   margin-left: 10px;
 }
 
-h2
-{
-  font-family: "Press Start 2P", cursive;
-  color: black;
-  text-align: center;
-}
-
 h3 {
   font-family: "Press Start 2P", cursive;
   color: black;
-  text-align: center;
-  margin-left: 150px;
+  margin-left: 48%;
+
 }
 
 /* Nabvar max width */
@@ -175,7 +175,6 @@ svg:hover {
 .score-board {
   background-color: #fff;
   padding: 5px 5px;
-  margin: auto;
 }
 
 /* Game grid - Ania Kubow tutorial, adjusted the height and width to make the squares responsive. */
