@@ -22,11 +22,12 @@ body {
 
 a {
   color: inherit;
+  text-decoration: none;
 }
 
 h1 {
   font-family: "Press Start 2P", cursive;
-  color: #fff;
+  color: white;
   margin-left: 10px;
 }
 
