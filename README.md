@@ -292,7 +292,7 @@ For more information regarding cloning of a repository click [here](https://help
 
 #### Content
 
-This project JS part was following Ania Kubow tutorial in how to build a Candy Crush style game. I made some changes on the game and built the CSS and HTML pulling information from different sites (referenced below) in the acknowledgements.
+This project JS part was following Ania Kubow tutorial in how to build a Candy Crush style game. I made some changes on the game and built the CSS and HTML pulling information from different sites referenced below in the acknowledgements.
 
 #### Media
 
@@ -316,6 +316,6 @@ I received inspiration for this project from:
 
 #### I received advice and support from
 
-* Codú Community
+* Codú Community.
 * My mentor Dick Vlaanderen.
 * Code Institute - Slack Community.
