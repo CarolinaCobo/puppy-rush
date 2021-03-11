@@ -2,7 +2,7 @@
 
 document.addEventListener('DOMContentLoaded', () => {
     const grid = document.querySelector('.grid');
-    const scoreDisplay = document.getElementById('score')
+    const scoreDisplay = document.getElementById('score');
     const width = 8;
     const squares = [];
     let score = 0;
@@ -19,16 +19,16 @@ document.addEventListener('DOMContentLoaded', () => {
     // Create board 
     function createBoard() {
         for (let i = 0; i < width * width; i++) {
-            const square = document.createElement('div') // creates new div
-            square.setAttribute('draggable', true) // makes it draggable
-            square.setAttribute('id', i) // 64 squares on the board
-            let randomColor = Math.floor(Math.random() * puppyColors.length) // assign a random integer
-            square.style.backgroundImage = puppyColors[randomColor] // assign the random color
-            grid.appendChild(square)
-            squares.push(square)
+            const square = document.createElement('div'); // creates new div
+            square.setAttribute('draggable', true); // makes it draggable
+            square.setAttribute('id', i); // 64 squares on the board
+            let randomColor = Math.floor(Math.random() * puppyColors.length); // assign a random integer
+            square.style.backgroundImage = puppyColors[randomColor]; // assign the random color
+            grid.appendChild(square);
+            squares.push(square);
         }
     }
-    createBoard()
+    createBoard();
 
     // Drag the puppies. 
     let colorBeingDragged;
@@ -50,11 +50,11 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function dragOver(e) {
-        e.preventDefault() //Prevents it to do the default action
+        e.preventDefault(); //Prevents it to do the default action
     }
 
     function dragEnter(e) {
-        e.preventDefault() //Prevents it to do the default action        
+        e.preventDefault(); //Prevents it to do the default action        
     }
 
     function dragLeave() {
@@ -77,7 +77,7 @@ document.addEventListener('DOMContentLoaded', () => {
             squareIdBeingDragged - width,
             squareIdBeingDragged + 1,
             squareIdBeingDragged + width,
-        ]
+        ];
 
         let validMove = validMoves.includes(squareIdBeingReplaced);
 
@@ -127,7 +127,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 scoreDisplay.innerHTML = score;
                 rowOfFour.forEach(index => {
                     squares[index].style.backgroundImage = ''; // If it matches will give it an empty color
-                })
+                });
             }
         }
     }
@@ -147,7 +147,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 scoreDisplay.innerHTML = score;
                 columnOfFour.forEach(index => {
                     squares[index].style.backgroundImage = ''; // If it matches will give it an empty color
-                })
+                });
             }
         }
     }
@@ -170,8 +170,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 score += 3; // Add 3 points when we find 3 colors
                 scoreDisplay.innerHTML = score;
                 rowOfThree.forEach(index => {
-                    squares[index].style.backgroundImage = '' // If it matches will give it an empty color
-                })
+                    squares[index].style.backgroundImage = ''; // If it matches will give it an empty color
+                });
             }
         }
     }
@@ -197,7 +197,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     checkColumnForThree();
-
 
     window.setInterval(function () {  // Invokes the function constantly with a 100 milliseconds interval 
         moveDown()
@@ -230,6 +229,3 @@ document.addEventListener('DOMContentLoaded', () => {
 
     })
 })
-
-
-
