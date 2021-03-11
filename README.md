@@ -1,6 +1,6 @@
 # Puppy Rush
 
-![Logo](assets/testing/responsive.png)
+![Logo](assets/testing/responsive-screens.png)
 
 ## Table of contents
 
