@@ -282,7 +282,7 @@ To run this code locally, you can clone this repository directly into the editor
 1. Open Terminal.
 2. Change the current working directory to the location when you want the cloned directory.
 3. Type the following into your Terminal:
-git clone [https://github.com/CarolinaCobo/CarolsKitchen.git]
+git clone [https://github.com/CarolinaCobo/puppy-rush.git]
 5.Press Enter to create a local clone.
 
 To cut ties with this GitHub repository, type git remote rm origin into the terminal.
