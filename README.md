@@ -2,6 +2,8 @@
 
 ![Logo](assets/testing/responsive-screens.png)
 
+[Live site](https://carolinacobo.github.io/puppy-rush/)
+
 ## Table of contents
 
 1.[UX](#ux)
