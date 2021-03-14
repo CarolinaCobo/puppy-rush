@@ -1,6 +1,8 @@
 // Code from Ana Kubow Candy Crush tutorial with changes of my own.
 
-document.addEventListener("DOMContentLoaded", () => {
+const newLocal = "DOMContentLoaded";
+
+document.addEventListener(newLocal, () => {
   const grid = document.querySelector(".grid");
   const scoreDisplay = document.getElementById("score");
   const width = 8;
@@ -140,7 +142,7 @@ document.addEventListener("DOMContentLoaded", () => {
         53,
         54,
         55,
-      ]; // I don't what the row of 4 to start
+      ];
       if (notValid.includes(i)) continue;
 
       if (
@@ -164,8 +166,8 @@ document.addEventListener("DOMContentLoaded", () => {
   // Check for column of Four
 
   function checkColumnForFour() {
-    for (i = 0; i < 47; i++) {
-      let columnOfFour = [i, i + width, i + width * 2, i + width * 3]; // Defines the row
+    for (i = 0; i < 39; i++) {
+      let columnOfFour = [i, i+width, i+width*2, i+width*3]; // Defines the row
       let decidedColor = squares[i].style.backgroundImage; // Grab the color of the firs square and assign it
       const isBlank = squares[i].style.backgroundImage === ""; //Blank space if it's empty it equals true
 
