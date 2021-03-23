@@ -260,7 +260,7 @@ Video testing the site in the following [link](https://www.loom.com/share/4cd9b9
 * Buttons not appearing on the right place and appearing below, fixed it by adding negative margin to move it up.
 * Test reported an error because an anchor tag was wrapping the button with the image icon. To fix that I included a onclick event that would redirect to the desired site.
 * Some semicolons were missing on the Game JS file.
-* The test reported an error on the score was initially an h3 but as it was empty I modify it using a p tag instead, modifiying the styles on the CSS file as well.  
+* The test reported an error on the score was initially an h3 but as it was empty I modify it using a p tag instead, modifying the styles on the CSS file as well.  
 
 ### Deployment
 
@@ -319,5 +319,5 @@ I received inspiration for this project from:
 #### I received advice and support from
 
 * Codú Community.
-* My mentor Dick Vlaanderen.
-* Code Institute - Slack Community.
+* My mentor 
+* Code Institute Slack Community.
