@@ -5,19 +5,13 @@
   - [User Stories Paths](#user-stories-paths)
   - [Testing user stories](#testing-user-stories)
 - [Manual Testing](#manual-testing)
-  - [Navigation Links](#navigation-links)
-  - [Logo Link](#logo-link)
-  - [Footer Link](#footer-link)
-  - [Image Hover Styling](#image-hover-styling)
-  - [Home Page Image Modals](#home-page-image-modals)
-  - [Gallery Page Image Modals](#gallery-page-image-modals)
-  - [Gallery Page Carousel Controls](#gallery-page-carousel-controls)
-  - [Responsive Design](#responsive-design)
-  - [About Page Links](#about-page-links)
-  - [Contact Form](#contact-form)
-  - [Browser Compatibility Testing](#browser-compatibility-testing)
+  - [Home page](#home-page)
+  - [Game page](#home-page)
+  - [Contact page](#home-page)
+- [Manual test](#manual-test)
 - [Bugs Fixed During Testing](#bugs-fixed-during-testing)
 - [Bugs Remaining](#bugs-remaining)
+- [Acknowledgements](#backnowledgements)
 
 Main [README.md](/README.md) file.
 
@@ -74,8 +68,6 @@ The How to Play button is not necessarily part of the flow of the site for users
 
 ## Manual testing
 
-All the functionalities have been manually tested.
-
 ### Home Page
 
 1. Navigation bar:
@@ -113,7 +105,7 @@ All the functionalities have been manually tested.
 
     2. Check that scoreboard is correctly update when the puppies match.
 
-#### Contact Page
+### Contact Page
 
 1. Navigation bar:
     1. Navbar code is identical on this page as well. Testing already completed.
