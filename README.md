@@ -13,7 +13,6 @@
 2.[Structure](#structure)
 
 * [Design process](#design-process)
-
   * [Page structure](#page-structure)
   * [Home page](#home-page)
   * [Recipes page](#recipes-page)
@@ -24,9 +23,8 @@
 * [Colours](#colours)
 * [Fonts](#fonts)
 * [Features](#features)
-
-  * [Existing features](#existing-features)
-  * [Future features](#future-features)
+* [Existing features](#existing-features)
+* [Future features](#future-features)
 
 4.[Technologies used](#technologies-used)
 
@@ -173,94 +171,7 @@ I used as Favicon one of the images used for the game. I converted it using Favi
 
 ### Testing
 
-#### Code Validity
-
-Code has tested and passed all the test at:
-
-* [W3C Markup Validation Service - HTML](https://validator.w3.org/).
-* [W3C Markup Validation Service - CSS](https://jigsaw.w3.org/css-validator/).
-
-* Screenshots following this [link](https://github.com/CarolinaCobo/puppy-rush/tree/main/assets/testing).
-
-#### Testing responsiveness
-
-* With Google Developer Tools in Chrome in all screen sizes.
-
-#### Browsers
-
-Manually tested:
-
-* Chrome.
-* Safari.
-
-Tested on the following devices:
-
-* MacBook Pro.
-* HP.
-* iPhone XS.
-* Samsung.
-* iPad.
-
-Tested in desktop, phone and tablet sizes.
-
-#### Tools for testing
-
-* [Am I Responsive](http://ami.responsivedesign.is/) - for testing purposes.
-* [Google Chrome DevTools](https://developers.google.com/web/tools/chrome-devtools) - used for testing and debugging.
-* [w3 html validator](https://validator.w3.org/) - used to test and validate my html code.
-* [w3 css validator](https://jigsaw.w3.org/) - used to test and validate my CSS code.
-* JS Linter.
-
-## Tests
-
-The following manual tests have been performed, link video at the end.
-
-1. Clicking all the buttons:
-    1. Click Play and how to play.
-    2. Click on the Home and Contact icons.
-
-2. Game:
-    1. Open it clicking the button.
-    2. Matching the puppies to make them disappear.
-    3. Checking that the score is updating.
-
-3. Contact form:
-    1. Go to the "Contact" page
-    2. Try to submit the empty form and verify that an error message about the required fields appears
-    3. Try to submit the form with an invalid email address and verify that a relevant error message appears
-    4. Try to submit the form with all inputs valid and verify that a success message appears.
-    5. An alert appears showing that the message has been sent.
-    6. Click home button and come back to home page.
-
-Below a table with a list of the test performed:
-
-What do you do? | Expected Behavior | Pass/Fail  |
-| ------------- |-------------| -----|
-| Click the play button| Start game | Pass |
-| Click How to Play button | Opens modal with the instructions | Pass |
-| Click on the Contact icon on the top | Open the contact page | Pass |
-| Play the game | Move the puppies on the grid | Pass |
-| Play the game | Score starts on 0 | Pass |
-| Play the game | Puppies disappear when 3 of them match | Pass |
-| Play the game | Puppies disappear when 4 of them match | Pass |
-| Play the game | Score updates when  puppies matched | Pass |
-| Contact the site owner | Prompt an alert if the name is missing | Pass |
-| Contact the site owner | Prompt an alert if the email is missing | Pass |
-| Contact the site owner | Prompt an alert if the email format is incorrect | Pass |
-| Contact the site owner | Prompt an alert if the message format is incorrect | Pass |
-| Contact the site owner | Prompt an alert that the message has been sent | Pass |
-
-Video testing the site in the following [link](https://www.loom.com/share/4cd9b9f3ad864e229848f7b6f35b7d50).
-
-### Bugs found and fixed
-
-* The score was starting with random numbers as anytime the game loaded it matched some of the puppies and disappeared. To fix that I added the modal and linked the play button in the modal with the event to reset the score on the JS file.
-* Overflow in small devices, to fix this I added an overflow hidden and made different media queries for all screen sizes.
-* Modal was pushing the game down instead of covering it, to fix it I put a wrapper around the content.
-* Buttons not appearing on the right place and appearing below, fixed it by adding negative margin to move it up.
-* Test reported an error because an anchor tag was wrapping the button with the image icon. To fix that I included a onclick event that would redirect to the desired site.
-* Some semicolons were missing on the Game JS file.
-* The test reported an error on the score was initially an h3 but as it was empty I modify it using a p tag instead, modifying the styles on the CSS file as well.  
+The test performed can be found at the [testing.md](/testing.md) file.
 
 ### Deployment
 
