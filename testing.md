@@ -1,21 +1,36 @@
 # Puppy Rush Testing
 
-- [Automated Testing](#automated-testing)
-- [User Stories](#user-stories)
-  - [User Stories Paths](#user-stories-paths)
-  - [Testing user stories](#testing-user-stories)
-- [Manual Testing](#manual-testing)
-  - [Home page](#home-page)
-  - [Game page](#home-page)
-  - [Contact page](#home-page)
-- [Manual test](#manual-test)
+1.[Automated Testing](#automated-testing)
+
+2.[Other tools used](#other-tools-used)
+
+3.[User Stories](#user-stories)
+
+- [User Stories Paths](#user-stories-paths)
+- [Testing user stories](#testing-user-stories)
+
+3.[Manual Testing](#manual-testing)
+
+- [Home page](#home-page)
+- [Game page](#home-page)
+- [Contact page](#home-page)
+- [Test recording](#test-recording)
+- [Devices and browsers](#devices-and-browsers)
+
+5.[Bugs](#bugs)
+
 - [Bugs Fixed During Testing](#bugs-fixed-during-testing)
-- [Bugs Remaining](#bugs-remaining)
-- [Acknowledgements](#backnowledgements)
+- [Bugs found and not fixed](#bugs-found-and-not-fixed)
 
-Main [README.md](/README.md) file.
+6.[Acknowledgements](#acknowledgements)
 
-[Live site](https://carolinacobo.github.io/puppy-rush/) on Github Pages.
+***  
+
+Main [README.md](/README.md) file.  
+
+[Live site](https://carolinacobo.github.io/puppy-rush/) on Github Pages.  
+
+***
 
 ## Automated testing
 
@@ -29,8 +44,9 @@ Some bugs were found and fixed, this will be explained in a section below.
 
 ## Other tools used
 
-- [Am I Responsive](http://ami.responsivedesign.is/) - test the game in different sizes.
-![Responsive](assets/testing/responsive-screens.png)
+- [Am I Responsive](http://ami.responsivedesign.is/) - test the game in different sizes.  
+
+    ![Responsive](assets/testing/responsive-screens.png)
 
 - [Google Chrome DevTools](https://developers.google.com/web/tools/chrome-devtools) - used for testing and debugging along the development process.
 
@@ -121,7 +137,7 @@ The How to Play button is not necessarily part of the flow of the site for users
     1. Once the message has been sent with the correct format an alert confirming the message has been sent appears.
     2. Receive the message on the email.
 
-## Tests
+### Tests recording
 
 The following manual tests have been performed, link video at the end.
 
@@ -164,18 +180,20 @@ Video testing the site in the following [link](https://www.loom.com/share/4cd9b9
 
 ### Devices and browsers
 
-Manually tested:
+Manually tested on:
 
-    * Chrome.
-    * Safari.
+- Chrome.
+- Safari.
 
 Tested on the following devices:
 
-    * MacBook Pro.
-    * HP.
-    * iPhone XS.
-    * Samsung.
-    * iPad.
+- MacBook Pro.
+- HP.
+- iPhone XS.
+- Samsung.
+- iPad.
+
+## Bugs
 
 ### Bugs found and fixed
 
