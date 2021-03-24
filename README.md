@@ -34,15 +34,7 @@
 
 5.[Testing](#testing)
 
-* [Testing responsiveness](#testing-responsiveness)
-* [Browsers](#browsers)
-* [HTML and CSS validation](#html-and-css-validation)
-* [Tools for testing](#tools-for-testing)
-
-6.[Tests](#tests)
-
-* [Bugs found and fixed](#user-stories)
-* [Deployment](#deployment)
+6.[Deployment](#deployment)
 
 7.[Credits](#credits)
 
