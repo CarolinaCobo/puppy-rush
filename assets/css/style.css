@@ -183,9 +183,10 @@ svg:hover {
   width: 800px;
   display: flex;
   flex-wrap: wrap;
-  margin-top: 50px;
+  margin-top: 20px;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 20px;
 }
 
 .grid div {
@@ -374,7 +375,7 @@ svg:hover {
 /* Code from my Milestone project 1 with changes */
 
 .footer {
-  position: fixed;
+  /* position: fixed; */
   left: 0;
   bottom: 0;
   padding-top: 5px;
