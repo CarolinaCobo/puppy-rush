@@ -222,5 +222,5 @@ I received inspiration for this project from:
 #### I received advice and support from
 
 * Codú Community.
-* My mentor 
+* My mentor
 * Code Institute Slack Community.
