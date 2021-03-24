@@ -1,6 +1,8 @@
 # Puppy Rush
 
-![Logo](assets/testing/responsive-screens.png)
+![Logo](testing/responsive-screens.png)
+
+Puppy matching game. Match as many groups of three or four puppies before the time is out.
 
 [Live site](https://carolinacobo.github.io/puppy-rush/)
 
@@ -63,15 +65,15 @@
 | ------------- |:-------------:|
 | Offer an site that is easy to navigate | Can enjoy the game|
 | Use an aesthetically pleasing site| Have an easy experience |
-| Provide an easy way to contact me| Give feedback or ask questions |
+| Provide an easy way to contact me| Give feedback or ask questions |  
 
-The wireframes for this project for desktop, iPad and mobile can be find [here](https://github.com/CarolinaCobo/puppy-rush/tree/main/assets/wireframes).
+The wireframes for this project:  
 
-## Structure
+* [Desktop](assets/wireframes/desktop-view.png)
+* [iPad](assets/wireframes/ipad-view.png)
+* [Mobile](assets/wireframes/mobile-view.png)
 
-### Design process
-
-#### Page structure
+### Structure
 
 * My aim was to make the game simple and easy for the user to play it.
 * All pages follow the same style and color palette, simple and easy to navigate.
@@ -114,9 +116,11 @@ For the logo and the Score I used  "Press Start 2P" and for the rest of the site
 
 I used as Favicon one of the images used for the game. I converted it using Favicon.io.
 
-### Features
+***
 
-#### Existing Features
+## Features
+
+### Existing Features
 
 * Feature 1 - Landing page with two buttons that allows the user to pick between two options Play or How to Play.
 * Feature 2 - Modal that covers the game.
@@ -132,20 +136,21 @@ I used as Favicon one of the images used for the game. I converted it using Favi
 * Feature 4 - Allows users to send a message with a question.
   * Built with HTML, CSS and JS and used EmailJS API to send a message to the site owner.
 
-#### Future features
+### Future features
 
-* Timer.
 * Score board with a ranking of players.
 
-### Technologies Used
+***
 
-#### Languages
+## Technologies Used
+
+### Languages
 
 * HTML -  to build the structure of this site.
 * CSS - to style and fix media queries and the max width.
 * JavaScript - to build the game and add interactivity with buttons and send messages to the site owner.
 
-#### Libraries
+### Libraries
 
 * [Google Fonts](https://fonts.google.com) - used for fonts on the site.
 * [Hover.css](https://ianlunn.github.io/Hover/) - used for animation effects on social icons and various buttons throughout the site.
@@ -153,21 +158,25 @@ I used as Favicon one of the images used for the game. I converted it using Favi
 * [Hero Icons](https://heroicons.com/) - Site icons.
 * [TailwindCSS](https://tailwindcss.com/docs/box-shadow) - For inspiration on the styles for the site.
 
-#### Programmes and Tools
+#### Programs and Tools
 
-* VSCode - used as IDE for the project.
+* [VSCode](https://code.visualstudio.com/) - used as IDE for the project.
 * [Git](https://git-scm.com/) - used for version control.
 * [Github](https://github.com/) - used to host repository and to generate the live website.
-* Balsamiq - used to create the wireframes.
+* [Balsamiq](https://balsamiq.com/) - used to create the wireframes.
 * [Chrome Developer Tools](https://developers.google.com/web/tools/chrome-devtools) - used to test and optimize the site.
 
-### Testing
+***
 
-The test performed can be found at the [testing.md](/testing.md) file.
+## Testing
 
-### Deployment
+The test performed can be found at the [testing.md](/TESTING.md) file.
 
-#### GitHub pages
+***
+
+## Deployment
+
+### GitHub pages
 
 My site is hosted on GitHub pages, deployed directly from the master branch.
 The steps to complete the hosting process.
@@ -180,26 +189,35 @@ The steps to complete the hosting process.
 6. The page refreshes automatically and the project is deployed.
 7. The URL for the page will be public automatically.
 
-#### Cloning
+### Cloning
 
 To run this code locally, you can clone this repository directly into the editor of your choice by following the steps below:
 
-1. Open Terminal.
-2. Change the current working directory to the location when you want the cloned directory.
-3. Type the following into your Terminal:
-git clone [https://github.com/CarolinaCobo/puppy-rush.git]
+1.Go the Github repository that you wish to clone:
+
+* Click Code with the down arrow so the modal will open.  
+* Click on the clip icon to copy the repository.
+
+2.Open Terminal.
+
+3.Change the current working directory to the location when you want the cloned directory.
+
+4.Paste the link previously copied or type the following into your Terminal: git clone [https://github.com/CarolinaCobo/puppy-rush.git].
+
 5.Press Enter to create a local clone.
 
 To cut ties with this GitHub repository, type git remote rm origin into the terminal.
 For more information regarding cloning of a repository click [here](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository).
 
-### Credits
+***
 
-#### Content
+## Credits
 
-This project JS part was following Ania Kubow tutorial in how to build a Candy Crush style game. I made some changes on the game and built the CSS and HTML pulling information from different sites referenced below in the acknowledgements.
+### Content
 
-#### Media
+This project JS part was following [Ania Kubow tutorial](https://www.youtube.com/watch?v=XD5sZWxwJUk) in how to build a Candy Crush style game. I made some changes on the game and built the CSS and HTML pulling information from different sites referenced below in the acknowledgements.
+
+### Media
 
 * The color palette used in this site was obtained from [Colorhunt.co](https://colorhunt.co)
 * The favicon for this site has been resized in [Favicon.io](https://favicon.io/)
@@ -207,7 +225,7 @@ This project JS part was following Ania Kubow tutorial in how to build a Candy C
 * Icons are from [Hero Icons](https://heroicons.com/).
 * The icons have been made for this project by a designer.
 
-#### Acknowledgements
+### Acknowledgements
 
 I received inspiration for this project from:
 
@@ -218,9 +236,10 @@ I received inspiration for this project from:
 * [StackOverflow](https://stackoverflow.com/)
 * [Codú Community](https://www.youtube.com/channel/UCvI5azOD4eDumpshr00EfIw)
 * [FreeCodeCamp](https://www.freecodecamp.org/)
+* [Anna Greaves](https://github.com/AJGreaves)
 
 #### I received advice and support from
 
-* Codú Community.
-* My mentor
-* Code Institute Slack Community.
+* [Codú Community](https://discord.com/invite/NxSkYtZ)
+* My mentor [Precious Ijege](https://www.linkedin.com/in/precious-ijege-908a00168/)
+* Code Institute [Slack Community](code-institute-room.slack.com)
