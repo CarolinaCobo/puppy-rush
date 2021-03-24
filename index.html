@@ -10,12 +10,14 @@
   <link rel="stylesheet" href="assets/css/style.css" />
   <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png" />
 </head>
-
+<!-- Body -->
 <body>
   <div class="navbar">
     <h1>Puppy Rush</h1>
+    <!-- Navigation bar -->
     <div class="nav-btn">
       <!-- Onclick function from Mdn documentation -->
+      <!-- Buttons on the navigation bar -->
       <button class="btn-icon" onclick="window.location.href = 'index.html';">
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -29,6 +31,7 @@
       </button>
     </div>
   </div>
+  <!-- Instructions modal -->
   <main class="wrapper">
     <div id="showGame" class="modal">
       <div class="buttons">
@@ -39,12 +42,14 @@
             <li>You can move the puppies horizontally and vertically</li>
           </ul>
         </div>
+        <!-- Play and how to play buttons -->
         <button type="button" id="playButton" class="btn-modal">Play</button>
         <button type="button" id="instructions" class="btn-modal">
           How to play
         </button>
       </div>
     </div>
+    <!-- Score board -->
     <section>
       <div class="score-board">
         <h3>Score</h3>
@@ -53,6 +58,7 @@
       <div class="grid"></div>
     </section>
   </main>
+  <!-- JS file -->
   <script src="js/game.js"></script>
   <footer class="footer">
     <div class="copyright">2021 Copyright: Carolina Cobo</div>
