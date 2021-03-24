@@ -207,6 +207,17 @@ svg:hover {
     margin-bottom: 10px;
   }
 
+  ul {
+    margin: 0;
+  }
+
+  h3 {
+    font-family: "Press Start 2P", cursive;
+    color: black;
+    text-align: center;
+    margin-left: 130px;
+  }
+
   .col-75,
   input[type="submit"] {
     width: 100%;
@@ -272,6 +283,36 @@ svg:hover {
     background: #fff;
   }
 
+
+}
+
+@media screen and (max-width: 770px) {
+  .grid {
+    height: 560px;
+    width: 560px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .grid div {
+    height: 70px;
+    width: 70px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+}
+
+@media screen and (max-width: 600px) {
+
+  h1 {
+    font-size: larger;
+    margin-bottom: 10px;
+  }
+
   ul {
     margin: 0;
   }
@@ -281,18 +322,6 @@ svg:hover {
     color: black;
     text-align: center;
     margin-left: 130px;
-  }
-}
-
-
-
-
-
-@media screen and (max-width: 600px) {
-
-  h1 {
-    font-size: larger;
-    margin-bottom: 10px;
   }
 
   .col-75,
@@ -360,6 +389,17 @@ svg:hover {
     background: #fff;
   }
 
+
+}
+
+/* Phone 5/SE size */
+@media screen and (max-width: 350px) {
+
+  h1 {
+    font-size: larger;
+    margin-bottom: 10px;
+  }
+
   ul {
     margin: 0;
   }
@@ -368,8 +408,80 @@ svg:hover {
     font-family: "Press Start 2P", cursive;
     color: black;
     text-align: center;
-    margin-left: 130px;
+    margin-left: 28px;
   }
+
+  .col-75,
+  input[type="submit"] {
+    width: 100%;
+    margin-top: 3px;
+    border-radius: 4px;
+  }
+
+  .grid {
+    height: 280px;
+    width: 280px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .grid div {
+    height: 35px;
+    width: 35px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  /* Nabvar buttons */
+  .nav-btn {
+    margin-left: 80px;
+  }
+
+  .btn-icon {
+    height: 45px;
+    width: 45px;
+    background: none;
+    cursor: pointer;
+    margin-left: 0;
+    margin-top: 20px;
+  }
+
+  /* Modal buttons  */
+  .buttons {
+    position: absolute;
+    margin-left: 35px;
+  }
+
+  .btn-modal {
+    margin-top: 20px;
+  }
+
+  .contact-container {
+    overflow: hidden;
+    margin-left: 20px;
+    width: 90%;
+  }
+
+  #inner-modal {
+    width: 100%;
+    position: absolute;
+    left: -30px;
+    top: -120px;
+    color: #000;
+    padding: 5px;
+    border-radius: 20px;
+    background: #fff;
+  }
+
+  .score-board {
+    background-color: #fff;
+    padding: 5px 5px;
+  }
+
+  
 }
 
 /* Code from my Milestone project 1 with changes */
