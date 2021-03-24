@@ -34,19 +34,19 @@ Main [README.md](/README.md) file.
 
 ## Automated testing
 
-Both HTML and CSS code has been validated in [W3C CSS validation](https://jigsaw.w3.org/css-validator/) and [W3C Markup Validation](https://validator.w3.org/) to check the validity of the website code.
+- Both HTML and CSS code has been validated in [W3C CSS validation](https://jigsaw.w3.org/css-validator/) and [W3C Markup Validation](https://validator.w3.org/) to check the validity of the website code.
 
-Screenshots of both test the passed test at this [link](https://github.com/CarolinaCobo/puppy-rush/tree/main/assets/testing).
+- Screenshots of the passed test on the following [link](https://github.com/CarolinaCobo/puppy-rush/tree/main/assets/testing).
 
-[Jshint](https://jshint.com/).
+- [Jshint](https://jshint.com/)
 
-Some bugs were found and fixed, this will be explained in a section below.
+Some bugs were found and fixed, this will be explained in the bugs section below.
 
 ## Other tools used
 
 - [Am I Responsive](http://ami.responsivedesign.is/) - test the game in different sizes.  
 
-    ![Responsive](assets/testing/responsive-screens.png)
+    ![Responsive](assets/testing/responsive-screens.png)  
 
 - [Google Chrome DevTools](https://developers.google.com/web/tools/chrome-devtools) - used for testing and debugging along the development process.
 
