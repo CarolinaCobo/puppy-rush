@@ -396,7 +396,7 @@ svg:hover {
 @media screen and (max-width: 350px) {
 
   h1 {
-    font-size: larger;
+    font-size: medium;
     margin-bottom: 10px;
   }
 
@@ -408,7 +408,12 @@ svg:hover {
     font-family: "Press Start 2P", cursive;
     color: black;
     text-align: center;
-    margin-left: 28px;
+    margin-left: 50px;
+    font-size: small;
+  }
+
+  p {
+    font-size: small;
   }
 
   .col-75,
@@ -437,22 +442,23 @@ svg:hover {
   }
   /* Nabvar buttons */
   .nav-btn {
-    margin-left: 80px;
+    margin-left: 120px;
   }
 
   .btn-icon {
-    height: 45px;
+    height: 40px;
     width: 45px;
     background: none;
     cursor: pointer;
     margin-left: 0;
-    margin-top: 20px;
+    margin-top: 30px;
+    
   }
 
   /* Modal buttons  */
   .buttons {
     position: absolute;
-    margin-left: 35px;
+    margin-left: 20px;
   }
 
   .btn-modal {
@@ -461,19 +467,8 @@ svg:hover {
 
   .contact-container {
     overflow: hidden;
-    margin-left: 20px;
+    margin-left: 15px;
     width: 90%;
-  }
-
-  #inner-modal {
-    width: 100%;
-    position: absolute;
-    left: -30px;
-    top: -120px;
-    color: #000;
-    padding: 5px;
-    border-radius: 20px;
-    background: #fff;
   }
 
   .score-board {
