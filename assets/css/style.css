@@ -29,7 +29,7 @@ p, span,  h3 {
   font-family: "Press Start 2P", cursive;
   font-size: 20px;
   color: black;
-  /* text-align: center; */
+ 
 }
 
 h1 {
@@ -40,13 +40,14 @@ h1 {
 
 
 /* Nabvar max width */
-.navbar {
+.navbar, .score-board {
   max-width: 1400px;
   margin: auto;
 }
 
-/*************************** HOME PAGE BUTTONS *****************************/
+/*************************** BUTTONS *****************************/
 
+/* Modal buttons */
 .btn-modal {
   background-color: #fff;
   padding: 20px;
@@ -66,6 +67,7 @@ h1 {
   position: relative;
 }
 
+/* Icon buttons */
 .btn-icon {
   height: 50px;
   width: 50px;
@@ -75,6 +77,7 @@ h1 {
   color: #fff;
   margin-left: 20px;
 }
+
 /***************************** MODALS *****************************/
 
 .wrapper {
@@ -114,9 +117,14 @@ h1 {
 
 .score-board {
   background-color: #fff;
-  padding: 5px 5px;
 }
 
+.score-display {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 35%  0 35%;
+
+}
 
 /***************************** CONTACT FORM *****************************/
 /* Code from W3Schools with some changes*/
