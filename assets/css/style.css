@@ -25,11 +25,11 @@ a {
   text-decoration: none;
 }
 
-p {
+p, span,  h3 {
   font-family: "Press Start 2P", cursive;
   font-size: 20px;
   color: black;
-  text-align: center;
+  /* text-align: center; */
 }
 
 h1 {
@@ -38,12 +38,6 @@ h1 {
   margin-left: 10px;
 }
 
-h3 {
-  font-family: "Press Start 2P", cursive;
-  color: black;
-  margin-left: 48%;
-
-}
 
 /* Nabvar max width */
 .navbar {
@@ -51,7 +45,7 @@ h3 {
   margin: auto;
 }
 
-/* Home page buttons */
+/*************************** HOME PAGE BUTTONA *****************************/
 
 .btn-modal {
   background-color: #fff;
@@ -72,7 +66,17 @@ h3 {
   position: relative;
 }
 
-/* Modal */
+.btn-icon {
+  height: 50px;
+  width: 50px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  margin-left: 20px;
+}
+/***************************** MODALS *****************************/
+
 .wrapper {
   position: relative;
   min-height: 90vh;
@@ -100,12 +104,23 @@ h3 {
   background: #fff;
 }
 
-/* Hide modal. Help from Codu Community */
+/* Hide modal. Made with the help of the Codu Community members */
 .hidden {
   display: none;
 }
 
-/* Contact form from W3Schools with some changes*/
+
+/***************************** SCORE BOARD *****************************/
+
+.score-board {
+  background-color: #fff;
+  padding: 5px 5px;
+}
+
+
+/***************************** CONTACT FORM *****************************/
+/* Code from W3Schools with some changes*/
+
 input[type="text"],
 select,
 textarea {
@@ -148,15 +163,6 @@ input[type="submit"] {
   margin: 6px auto 0;
 }
 
-.btn-icon {
-  height: 50px;
-  width: 50px;
-  background: none;
-  border: none;
-  cursor: pointer;
-  color: #fff;
-  margin-left: 20px;
-}
 
 /* Idea from FreeCodeCamp */
 svg:hover {
@@ -170,14 +176,8 @@ svg:hover {
   padding-bottom: 50px;
 }
 
-/* Score board format */
-
-.score-board {
-  background-color: #fff;
-  padding: 5px 5px;
-}
-
-/* Game grid - Ania Kubow tutorial, adjusted the height and width to make the squares responsive. */
+/***************************** GAME GRID *****************************/
+/* From Ania Kubow tutorial, adjusted the height and width to make the squares responsive. */
 .grid {
   height: 800px;
   width: 800px;
@@ -199,6 +199,8 @@ svg:hover {
   border-radius: 4px;
 }
 
+
+/**************************  MEDIA QUERIES  ***************************/
 /* Make game and contact form responsive */
 
 @media screen and (max-width: 1024px) {
@@ -283,8 +285,9 @@ svg:hover {
     background: #fff;
   }
 
-
 }
+
+
 
 @media screen and (max-width: 770px) {
   .grid {
