@@ -286,7 +286,7 @@ document.addEventListener(newLocal, () => {
 document.addEventListener('DOMContentLoaded', () => {
   const timeLeftDisplay = document.querySelector('#time-left')
   const playButton = document.getElementById("playButton");
-  let timeLeft = 5;
+  let timeLeft = 60;
 
   function countDown() {
     setInterval(function () {
