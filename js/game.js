@@ -304,6 +304,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   playButton.addEventListener('click', countDown)
 
+  //  Shows modal when the game time is finished
   function gameEnd() {
 
     const endModal = document.getElementById('end-modal');
