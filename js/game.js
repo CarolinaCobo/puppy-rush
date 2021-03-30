@@ -1,6 +1,6 @@
 // Code from Ana Kubow Candy Crush tutorial with changes of my own.
 
-const newLocal = "DOMContentLoaded";
+let newLocal = "DOMContentLoaded";
 
 document.addEventListener(newLocal, () => {
   const grid = document.querySelector(".grid");
@@ -255,21 +255,18 @@ document.addEventListener(newLocal, () => {
     checkColumnForThree();
   }, 100);
 
+
   // Codú community helped me with this piece of code.
 
   const instructionsButton = document.getElementById("instructions");
-
   const instructionsModal = document.getElementById("inner-modal");
 
-
-
   // Open the modal
-  instructionsButton.addEventListener("click", () => {
+    instructionsButton.addEventListener("click", () => {
     instructionsModal.classList.toggle("hidden");
   });
 
   const playButton = document.getElementById("playButton");
-
   const gameModal = document.getElementById("showGame");
 
   playButton.addEventListener("click", () => {
@@ -279,13 +276,9 @@ document.addEventListener(newLocal, () => {
 
   });
 
-});
+  // Timer  
 
-
-// Timer from https://www.youtube.com/watch?v=vSV_Ml2_A88 
-document.addEventListener('DOMContentLoaded', () => {
   const timeLeftDisplay = document.querySelector('#time-left')
-  const playButton = document.getElementById("playButton");
   let timeLeft = 60;
 
   function countDown() {
@@ -306,13 +299,30 @@ document.addEventListener('DOMContentLoaded', () => {
 
   //  Shows modal when the game time is finished
   function gameEnd() {
-
     const endModal = document.getElementById('end-modal');
     endModal.classList.remove('hidden');
   }
 
-})
+
+  // Restart the game
+  const restartButton = document.getElementById("restart-btn");
+  
+  function restartGame(){
+    const gameOverModal =  document.getElementById('end-modal')
+    gameOverModal.classList.toggle('hidden');
+
+    score = 0;
+    scoreDisplay.innerHTML = score;
+    timeLeft  = 60;
+    score  = 0;
+  }
+
+  restartButton.addEventListener('click', restartGame)
+
+});
 
 
 
 
+
+  
