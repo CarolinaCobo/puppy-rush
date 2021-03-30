@@ -158,7 +158,7 @@ h1 {
   margin: 0 35% 0 35%;
 }
 
-/***************************** CONTACT FORM *****************************/
+/*************************** CONTACT FORM *****************************/
 /* Code from W3Schools with some changes*/
 
 input[type="text"],
@@ -261,7 +261,7 @@ svg:hover {
   }
 }
 
-@media screen and (max-width: 770px) {
+@media screen and (max-width: 790px) {
   .grid {
     height: 560px;
     width: 560px;
@@ -301,7 +301,97 @@ svg:hover {
   }
 }
 
-/* Phone 5/SE size */
+@media screen and (max-width: 420px) {
+  h1 {
+    font-size: medium;
+    margin-bottom: 10px;
+  }
+
+  ul {
+    margin: 0;
+  }
+
+  h3,
+  p,
+  span {
+    font-family: "Press Start 2P", cursive;
+    color: black;
+    font-size: 12px;
+    margin: 10px;
+  }
+
+  /* Navbar  buttons */
+  .btn-icon {
+    height: 40px;
+    width: 40px;
+    background: none;
+    margin-left: 0;
+    margin-top: 30px;
+  }
+  .nav-btn {
+    margin-left: 30px;
+  }
+
+  /* Modal */
+  .buttons {
+    margin: 80px 80px;
+  }
+
+  .btn-modal {
+    margin-bottom: 10px;
+  }
+
+  #inner-modal {
+    font-size: small;
+    margin-top: 10px;
+  }
+  /* Sore board */
+  .score-board {
+    background-color: #fff;
+    padding: 5px 5px;
+  }
+
+  .score-display {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 20% 0 20%;
+  }
+
+  /* Contact page */
+  .col-75,
+  input[type="submit"] {
+    width: 100%;
+    margin-top: 3px;
+    border-radius: 4px;
+  }
+
+  .contact-container {
+    overflow: hidden;
+    margin-left: 15px;
+    width: 90%;
+  }
+
+  /* Game board */
+  .grid {
+    height: 360px;
+    width: 360px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .grid div {
+    height: 45px;
+    width: 45px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+}
+
+/* Smaller screen */
 @media screen and (max-width: 360px) {
   h1 {
     font-size: medium;
@@ -333,7 +423,7 @@ svg:hover {
     margin-left: 30px;
   }
 
-  /* Modal   */
+  /* Modal */
   .buttons {
     margin: 80px 80px;
   }
@@ -396,7 +486,6 @@ svg:hover {
 /* Code from my Milestone project 1 with changes */
 
 .footer {
-  /* position: fixed; */
   left: 0;
   bottom: 0;
   padding-top: 5px;
