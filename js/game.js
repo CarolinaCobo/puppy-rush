@@ -1,6 +1,6 @@
 // Code from Ana Kubow Candy Crush tutorial with changes of my own.
 
-const newLocal = "DOMContentLoaded";
+let newLocal = "DOMContentLoaded";
 
 document.addEventListener(newLocal, () => {
   const grid = document.querySelector(".grid");
@@ -59,7 +59,7 @@ document.addEventListener(newLocal, () => {
     e.preventDefault(); //Prevents it to do the default action
   }
 
-  function dragLeave() {}
+  function dragLeave() { }
 
   function dragDrop() {
     colorBeingReplaced = this.style.backgroundImage;
@@ -167,7 +167,7 @@ document.addEventListener(newLocal, () => {
 
   function checkColumnForFour() {
     for (i = 0; i < 39; i++) {
-      let columnOfFour = [i, i+width, i+width*2, i+width*3]; // Defines the row
+      let columnOfFour = [i, i + width, i + width * 2, i + width * 3]; // Defines the row
       let decidedColor = squares[i].style.backgroundImage; // Grab the color of the firs square and assign it
       const isBlank = squares[i].style.backgroundImage === ""; //Blank space if it's empty it equals true
 
@@ -255,24 +255,74 @@ document.addEventListener(newLocal, () => {
     checkColumnForThree();
   }, 100);
 
+
   // Codú community helped me with this piece of code.
 
   const instructionsButton = document.getElementById("instructions");
-
   const instructionsModal = document.getElementById("inner-modal");
 
   // Open the modal
-  instructionsButton.addEventListener("click", () => {
+    instructionsButton.addEventListener("click", () => {
     instructionsModal.classList.toggle("hidden");
   });
 
   const playButton = document.getElementById("playButton");
-
   const gameModal = document.getElementById("showGame");
 
   playButton.addEventListener("click", () => {
     score = 0;
     scoreDisplay.innerHTML = score;
     gameModal.classList.toggle("hidden");
+
   });
+
+  // Timer  
+
+  const timeLeftDisplay = document.querySelector('#time-left')
+  let timeLeft = 60;
+
+  function countDown() {
+    setInterval(function () {
+      if (timeLeft <= 0) {
+        clearInterval(timeLeft = 0)
+        gameEnd()
+      }
+      timeLeftDisplay.innerHTML = timeLeft;
+      timeLeft -= 1;
+
+    }, 1000)
+
+
+  }
+
+  playButton.addEventListener('click', countDown)
+
+  //  Shows modal when the game time is finished
+  function gameEnd() {
+    const endModal = document.getElementById('end-modal');
+    endModal.classList.remove('hidden');
+  }
+
+
+  // Restart the game
+  const restartButton = document.getElementById("restart-btn");
+  
+  function restartGame(){
+    const gameOverModal =  document.getElementById('end-modal')
+    gameOverModal.classList.toggle('hidden');
+
+    score = 0;
+    scoreDisplay.innerHTML = score;
+    timeLeft  = 60;
+    score  = 0;
+  }
+
+  restartButton.addEventListener('click', restartGame)
+
 });
+
+
+
+
+
+  

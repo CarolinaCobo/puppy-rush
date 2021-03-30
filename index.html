@@ -2,67 +2,139 @@
 
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Puppy Rush</title>
-  <link rel="stylesheet" href="assets/css/style.css" />
-  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png" />
-</head>
-<!-- Body -->
-<body>
-  <div class="navbar">
-    <h1>Puppy Rush</h1>
-    <!-- Navigation bar -->
-    <div class="nav-btn">
-      <!-- Onclick function from Mdn documentation -->
-      <!-- Buttons on the navigation bar -->
-      <button class="btn-icon" onclick="window.location.href = 'index.html';">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-            d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
-        </svg>
-      </button>
-      <button class="btn-icon" onclick="window.location.href = 'contact.html';">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8" />
-        </svg>
-      </button>
-    </div>
-  </div>
-  <!-- Instructions modal -->
-  <main class="wrapper">
-    <div id="showGame" class="modal">
-      <div class="buttons">
-        <div id="inner-modal" class="hidden">
-          <ul>
-            <li>Press the start button</li>
-            <li>Find the matching puppies</li>
-            <li>You can move the puppies horizontally and vertically</li>
-          </ul>
-        </div>
-        <!-- Play and how to play buttons -->
-        <button type="button" id="playButton" class="btn-modal">Play</button>
-        <button type="button" id="instructions" class="btn-modal">
-          How to play
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Puppy Rush</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/favicon/favicon-32x32.png"
+    />
+  </head>
+  <!-- Body -->
+  <body>
+    <div class="navbar">
+      <h1>Puppy Rush</h1>
+      <!-- Navigation bar -->
+      <div class="nav-btn">
+        <!-- Onclick function from Mdn documentation -->
+        <!-- Buttons on the navigation bar -->
+        <button class="btn-icon" onclick="window.location.href = 'index.html';">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
+            />
+          </svg>
+        </button>
+        <button
+          class="btn-icon"
+          onclick="window.location.href = 'contact.html';"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"
+            />
+          </svg>
         </button>
       </div>
     </div>
-    <!-- Score board -->
-    <section>
-      <div class="score-board">
-        <h3>Score</h3>
-        <p id="score"></p>
-      </div>
-      <div class="grid"></div>
-    </section>
-  </main>
-  <!-- JS file -->
-  <script src="js/game.js"></script>
-  <footer class="footer">
-    <div class="copyright">2021 Copyright: Carolina Cobo</div>
-  </footer>
-</body>
+    <!-- Instructions modal -->
+    <main class="wrapper">
+      <div id="showGame" class="modal">
+        <div class="buttons">
+          <div id="inner-modal" class="hidden">
+            <ul>
+              <li>Press the start button</li>
+              <li>Find the matching puppies</li>
+              <li>You can move the puppies horizontally and vertically</li>
+            </ul>
+          </div>
 
+          <!-- Play and how to play buttons -->
+          <button type="button" id="playButton" class="btn-modal">Play</button>
+          <button type="button" id="instructions" class="btn-modal">
+            How to play
+          </button>
+        </div>
+      </div>
+
+      <section class="gameover-modal hidden" id="end-modal">
+        <h3>Game finished!</h3>
+        <section class="gameOverBtn">
+          <button id="restart-btn" class="btn-icon-modal">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd" d="M4 2a1 1 0 011 1v2.101a7.002 7.002 0 0111.601 2.566 1 1 0 11-1.885.666A5.002 5.002 0 005.999 7H9a1 1 0 010 2H4a1 1 0 01-1-1V3a1 1 0 011-1zm.008 9.057a1 1 0 011.276.61A5.002 5.002 0 0014.001 13H11a1 1 0 110-2h5a1 1 0 011 1v5a1 1 0 11-2 0v-2.101a7.002 7.002 0 01-11.601-2.566 1 1 0 01.61-1.276z" clip-rule="evenodd" />
+            </svg>
+          </button>
+          <button
+            class="btn-icon-modal"
+            onclick="window.location.href = 'index.html';"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
+              />
+            </svg>
+          </button>
+        </section>
+      </section>
+
+      <!-- Score board -->
+      <section>
+        <div class="score-board">
+          <div class="score-display">
+            <div>
+              <h3>Timer</h3>
+              <p><span class="badge info-window" id="time-left">60</span></p>
+            </div>
+            <div>
+              <h3>Score</h3>
+              <p id="score"></p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Game board -->
+        <div class="grid"></div>
+      </section>
+    </main>
+
+    <!-- End of the game modal -->
+
+    <!-- JS file -->
+    <footer class="footer">
+      <div>2021 Copyright: Carolina Cobo</div>
+    </footer>
+    <script src="js/game.js"></script>
+  </body>
 </html>
+
+
+
