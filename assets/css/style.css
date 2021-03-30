@@ -25,11 +25,12 @@ a {
   text-decoration: none;
 }
 
-p, span,  h3 {
+p,
+span,
+h3 {
   font-family: "Press Start 2P", cursive;
   font-size: 20px;
   color: black;
- 
 }
 
 p {
@@ -42,9 +43,9 @@ h1 {
   margin-left: 10px;
 }
 
-
 /* Nabvar max width */
-.navbar, .score-board {
+.navbar,
+.score-board {
   max-width: 1400px;
   margin: auto;
 }
@@ -111,7 +112,6 @@ h1 {
   background: #fff;
 }
 
-
 .gameover-modal {
   position: absolute;
   top: 0;
@@ -125,7 +125,6 @@ h1 {
   align-items: center;
 }
 
-
 /***** Buttons game over modal ****/
 
 .gameOverBtn {
@@ -133,8 +132,7 @@ h1 {
   margin-top: 120px;
 }
 
-
-.btn-icon-modal  {
+.btn-icon-modal {
   height: 60px;
   width: 60px;
   background: none;
@@ -148,7 +146,6 @@ h1 {
   display: none;
 }
 
-
 /***************************** SCORE BOARD *****************************/
 
 .score-board {
@@ -158,8 +155,7 @@ h1 {
 .score-display {
   display: flex;
   justify-content: space-between;
-  margin: 0 35%  0 35%;
-
+  margin: 0 35% 0 35%;
 }
 
 /***************************** CONTACT FORM *****************************/
@@ -207,7 +203,6 @@ input[type="submit"] {
   margin: 6px auto 0;
 }
 
-
 /* Idea from FreeCodeCamp */
 svg:hover {
   transform: scale(1.1);
@@ -243,34 +238,10 @@ svg:hover {
   border-radius: 4px;
 }
 
-
 /**************************  MEDIA QUERIES  ***************************/
 /* Make game and contact form responsive */
 
 @media screen and (max-width: 1024px) {
-  h1 {
-    font-size: larger;
-    margin-bottom: 10px;
-  }
-
-  ul {
-    margin: 0;
-  }
-
-  h3 {
-    font-family: "Press Start 2P", cursive;
-    color: black;
-    text-align: center;
-    margin-left: 130px;
-  }
-
-  .col-75,
-  input[type="submit"] {
-    width: 100%;
-    margin-top: 3px;
-    border-radius: 4px;
-  }
-
   .grid {
     height: 800px;
     width: 800px;
@@ -288,50 +259,7 @@ svg:hover {
     background-repeat: no-repeat;
     background-position: center center;
   }
-  /* Nabvar buttons */
-  .nav-btn {
-    margin-left: 40px;
-  }
-
-  .btn-icon {
-    height: 50px;
-    width: 50px;
-    background: none;
-    cursor: pointer;
-    margin-left: 0;
-    margin-top: 20px;
-  }
-
-  /* Modal buttons  */
-  .buttons {
-    position: absolute;
-    margin-left: 65px;
-  }
-
-  .btn-modal {
-    margin-top: 20px;
-  }
-
-  .contact-container {
-    overflow: hidden;
-    margin-left: 20px;
-    width: 90%;
-  }
-
-  #inner-modal {
-    width: 100%;
-    position: absolute;
-    left: -30px;
-    top: -120px;
-    color: #000;
-    padding: 5px;
-    border-radius: 20px;
-    background: #fff;
-  }
-
 }
-
-
 
 @media screen and (max-width: 770px) {
   .grid {
@@ -354,30 +282,6 @@ svg:hover {
 }
 
 @media screen and (max-width: 600px) {
-
-  h1 {
-    font-size: larger;
-    margin-bottom: 10px;
-  }
-
-  ul {
-    margin: 0;
-  }
-
-  h3 {
-    font-family: "Press Start 2P", cursive;
-    color: black;
-    text-align: center;
-    margin-left: 130px;
-  }
-
-  .col-75,
-  input[type="submit"] {
-    width: 100%;
-    margin-top: 3px;
-    border-radius: 4px;
-  }
-
   .grid {
     height: 360px;
     width: 360px;
@@ -395,53 +299,10 @@ svg:hover {
     background-repeat: no-repeat;
     background-position: center center;
   }
-  /* Nabvar buttons */
-  .nav-btn {
-    margin-left: 20px;
-  }
-
-  .btn-icon {
-    height: 50px;
-    width: 50px;
-    background: none;
-    cursor: pointer;
-    margin-left: 0;
-    margin-top: 20px;
-  }
-
-  /* Modal buttons  */
-  .buttons {
-    position: absolute;
-    margin-left: 65px;
-  }
-
-  .btn-modal {
-    margin-top: 20px;
-  }
-
-  .contact-container {
-    overflow: hidden;
-    margin-left: 20px;
-    width: 90%;
-  }
-
-  #inner-modal {
-    width: 100%;
-    position: absolute;
-    left: -30px;
-    top: -120px;
-    color: #000;
-    padding: 5px;
-    border-radius: 20px;
-    background: #fff;
-  }
-
-
 }
 
 /* Phone 5/SE size */
-@media screen and (max-width: 350px) {
-
+@media screen and (max-width: 360px) {
   h1 {
     font-size: medium;
     margin-bottom: 10px;
@@ -451,18 +312,53 @@ svg:hover {
     margin: 0;
   }
 
-  h3 {
+  h3,
+  p,
+  span {
     font-family: "Press Start 2P", cursive;
     color: black;
-    text-align: center;
-    margin-left: 50px;
-    font-size: small;
+    font-size: 12px;
+    margin: 10px;
   }
 
-  p {
-    font-size: small;
+  /* Navbar  buttons */
+  .btn-icon {
+    height: 40px;
+    width: 40px;
+    background: none;
+    margin-left: 0;
+    margin-top: 30px;
+  }
+  .nav-btn {
+    margin-left: 30px;
   }
 
+  /* Modal   */
+  .buttons {
+    margin: 80px 80px;
+  }
+
+  .btn-modal {
+    margin-bottom: 10px;
+  }
+
+  #inner-modal {
+    font-size: small;
+    margin-top: 10px;
+  }
+  /* Sore board */
+  .score-board {
+    background-color: #fff;
+    padding: 5px 5px;
+  }
+
+  .score-display {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 20% 0 20%;
+  }
+
+  /* Contact page */
   .col-75,
   input[type="submit"] {
     width: 100%;
@@ -470,6 +366,13 @@ svg:hover {
     border-radius: 4px;
   }
 
+  .contact-container {
+    overflow: hidden;
+    margin-left: 15px;
+    width: 90%;
+  }
+
+  /* Game board */
   .grid {
     height: 280px;
     width: 280px;
@@ -487,45 +390,9 @@ svg:hover {
     background-repeat: no-repeat;
     background-position: center center;
   }
-  /* Nabvar buttons */
-  .nav-btn {
-    margin-left: 120px;
-  }
-
-  .btn-icon {
-    height: 40px;
-    width: 45px;
-    background: none;
-    cursor: pointer;
-    margin-left: 0;
-    margin-top: 30px;
-    
-  }
-
-  /* Modal buttons  */
-  .buttons {
-    position: absolute;
-    margin-left: 20px;
-  }
-
-  .btn-modal {
-    margin-top: 20px;
-  }
-
-  .contact-container {
-    overflow: hidden;
-    margin-left: 15px;
-    width: 90%;
-  }
-
-  .score-board {
-    background-color: #fff;
-    padding: 5px 5px;
-  }
-
-  
 }
 
+/************** FOOTER *************/
 /* Code from my Milestone project 1 with changes */
 
 .footer {
