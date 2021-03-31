@@ -13,6 +13,7 @@
     <script type="text/javascript">
         emailjs.init('user_HTT6JvIMa0YqrzXyDfQLh')
     </script>
+    
 </head>
 
 <body>
@@ -40,9 +41,8 @@
     <!--  Code obtained in w3Schools with changes -->
     <section>
         <form id="form" class="contact-container">
-            <div class="row"></div>
             <div class="col-75">
-                <input type="text" id="name" name="name" placeholder="Name" required />
+                <input type="text" id="name" name="name" placeholder="Name" pattern="[A-Za-z]+" required />
             </div>
             </div>
             <div class="row">
@@ -52,13 +52,13 @@
             </div>
             <div class="row">
                 <div class="col-75">
-                    <textarea id="subject" name="subject" placeholder="Your message" style="height: 200px"
+                    <textarea id="subject" name="subject" placeholder="Your message" pattern="[A-Za-z]+"
                         required></textarea>
                 </div>
             </div>
             <div class="row">
                 <div class="col-75">
-                    <input id="button" type="submit" value="Submit">
+                    <input id="button" type="submit" value="Submit"  >
                 </div>
             </div>
         </form>
@@ -68,7 +68,7 @@
     <footer class="footer">
         <div>2021 Copyright: Carolina Cobo</div>
     </footer>
-     <script src="assets/js/contact-form.js"></script>
+    <script src="js/contact-form.js"></script>
 </body>
 
 </html>
