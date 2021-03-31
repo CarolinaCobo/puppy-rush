@@ -203,6 +203,10 @@ input[type="submit"] {
   margin: 6px auto 0;
 }
 
+#subject {
+  height: 200px;
+}
+
 /* Idea from FreeCodeCamp */
 svg:hover {
   transform: scale(1.1);
