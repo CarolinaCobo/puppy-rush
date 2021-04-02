@@ -5,6 +5,7 @@ let newLocal = "DOMContentLoaded";
 document.addEventListener(newLocal, () => {
   const grid = document.querySelector(".grid");
   const scoreDisplay = document.getElementById("score");
+  const finalScoreDisplay = document.getElementById("final-score")
   const width = 8;
   const squares = [];
   let score = 0;
@@ -279,7 +280,7 @@ document.addEventListener(newLocal, () => {
   // Timer  
 
   const timeLeftDisplay = document.querySelector('#time-left')
-  let timeLeft = 60;
+  let timeLeft = 5;
 
   function countDown() {
     setInterval(function () {
@@ -301,6 +302,8 @@ document.addEventListener(newLocal, () => {
   function gameEnd() {
     const endModal = document.getElementById('end-modal');
     endModal.classList.remove('hidden');
+    finalScoreDisplay.innerHTML = score;
+    
   }
 
 
@@ -314,7 +317,7 @@ document.addEventListener(newLocal, () => {
     score = 0;
     scoreDisplay.innerHTML = score;
     timeLeft  = 60;
-    score  = 0;
+    
   }
 
   restartButton.addEventListener('click', restartGame)
