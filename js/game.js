@@ -270,6 +270,7 @@ document.addEventListener(newLocal, () => {
   const playButton = document.getElementById("playButton");
   const gameModal = document.getElementById("showGame");
 
+    // When the user press click on the play button the score is set to 0
   playButton.addEventListener("click", () => {
     score = 0;
     scoreDisplay.innerHTML = score;
@@ -280,7 +281,7 @@ document.addEventListener(newLocal, () => {
   // Timer  
 
   const timeLeftDisplay = document.querySelector('#time-left')
-  let timeLeft = 5;
+  let timeLeft = 30;
 
   function countDown() {
     setInterval(function () {
@@ -316,7 +317,7 @@ document.addEventListener(newLocal, () => {
 
     score = 0;
     scoreDisplay.innerHTML = score;
-    timeLeft  = 60;
+    timeLeft  = 30;
     
   }
 
