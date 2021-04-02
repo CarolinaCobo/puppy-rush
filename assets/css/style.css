@@ -358,7 +358,7 @@ svg:hover {
   .score-display {
     display: flex;
     justify-content: space-between;
-    margin: 0 20% 0 20%;
+    margin: 0 30% 0 30%;
   }
 
   /* Contact page */
