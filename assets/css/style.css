@@ -41,6 +41,7 @@ h1 {
   font-family: "Press Start 2P", cursive;
   color: white;
   margin-left: 10px;
+  cursor: pointer;
 }
 
 /* Nabvar max width */
@@ -62,6 +63,7 @@ h1 {
   font-size: 1.5em;
   border: 1px solid #ccc;
   width: 250px;
+  cursor: pointer;
 }
 
 .btn-modal:hover {
@@ -70,6 +72,7 @@ h1 {
 
 .buttons {
   position: relative;
+
 }
 
 /* Icon buttons */
