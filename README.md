@@ -167,7 +167,7 @@ I used as Favicon one of the images used for the game. I converted it using Favi
 * [VSCode](https://code.visualstudio.com/) - used as IDE for the project.
 * [Git](https://git-scm.com/) - used for version control.
 * [Github](https://github.com/) - used to host repository and to generate the live website.
-* [Github projects](https://github.com/CarolinaCobo/puppy-rush/projects/1) - used to track all the tasks, bugs and issues. 
+* [Github projects](https://github.com/CarolinaCobo/puppy-rush/projects/1) - used to track all the tasks, bugs and issues.
 * [Balsamiq](https://balsamiq.com/) - used to create the wireframes.
 * [Chrome Developer Tools](https://developers.google.com/web/tools/chrome-devtools) - used to test and optimize the site.
 
