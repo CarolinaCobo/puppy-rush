@@ -150,9 +150,9 @@ I used as Favicon one of the images used for the game. I converted it using Favi
 
 ### Languages
 
-* HTML -  to build the structure of this site.
-* CSS - to style and fix media queries and the max width.
-* JavaScript - to build the game and add interactivity with buttons and send messages to the site owner.
+* [HTML](https://www.w3schools.com/html/) -  to build the structure of this site.
+* [CSS](https://www.w3schools.com/css/) - to style and fix media queries and the max width.
+* [JavaScript](https://www.javascript.com/) - to build the game and add interactivity with buttons and send messages to the site owner.
 
 ### Libraries
 
@@ -179,7 +179,7 @@ The test performed can be found at the [testing.md](/TESTING.md) file.
 
 ### GitHub pages
 
-My site is hosted on GitHub pages, deployed directly from the master branch.
+My site is hosted on [GitHub pages](https://pages.github.com/), deployed directly from the master branch.
 The steps to complete the hosting process.
 
 1. Log into GitHub.
@@ -194,7 +194,7 @@ The steps to complete the hosting process.
 
 To run this code locally, you can clone this repository directly into the editor of your choice by following the steps below:
 
-1.Go the Github repository that you wish to clone:
+1.Go the [Github](https://github.com/) repository that you wish to clone:
 
 * Click Code with the down arrow so the modal will open.  
 * Click on the clip icon to copy the repository.
@@ -220,7 +220,7 @@ This project JS part was following [Ania Kubow tutorial](https://www.youtube.com
 
 * The color palette used in this site was obtained from [Colorhunt.co](https://colorhunt.co)
 * The favicon for this site has been resized in [Favicon.io](https://favicon.io/)
-* The Library Tailwind has been used for inspiration on styles.
+* The Library [Tailwind](https://tailwindcss.com/) has been used for inspiration on styles.
 * Icons are from [Hero Icons](https://heroicons.com/).
 * The icons have been made for this project by a designer.
 
