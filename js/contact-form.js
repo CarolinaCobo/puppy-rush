@@ -32,8 +32,5 @@ contactForm.addEventListener('submit', function (event) {
       //error message if the email is not being sent
       btn.value = 'Submit';
       alert(alert(JSON.stringify(err)`Sorry ${userName.value} something went wrong, please try again`));
-      console.log(error);
     });
-
-
 });
