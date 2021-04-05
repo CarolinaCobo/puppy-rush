@@ -22,8 +22,6 @@
 - [Bugs Fixed During Testing](#bugs-fixed-during-testing)
 - [Bugs found and not fixed](#bugs-found-and-not-fixed)
 
-6.[Acknowledgements](#acknowledgements)
-
 ***  
 
 Main [README.md](/README.md) file.  
@@ -36,20 +34,19 @@ Main [README.md](/README.md) file.
 
 - Both HTML and CSS code has been validated in [W3C CSS validation](https://jigsaw.w3.org/css-validator/) and [W3C Markup Validation](https://validator.w3.org/) to check the validity of the website code. In the following links a screenshot of the passed tests
   - [HTML](testing/html-test.png)
+  - [CSS](testing/css-test.png)
 
-- Screenshots of the passed test on the following [link](https://github.com/CarolinaCobo/puppy-rush/tree/main/assets/testing).
-
-- [Jshint](https://jshint.com/)
-  - [Game.js file](testing/js-hint-game.png)
+- [Jshint](https://jshint.com/) Links to the result of the performed test below:
+  - [Game.js](testing/js-hint-game.png)
+  - [Contact](testing/js-hint-contactForm.png)
 
 Some bugs were found and fixed, this will be explained in the bugs section below.
 
 ## Other tools used
 
 - [Am I Responsive](http://ami.responsivedesign.is/) - test the game in different sizes.  
-
-    ![Responsive](testing/responsive-screens.png)
-    ![Game responsive](testing/game-responsive-screens.png)
+  - [Responsive](testing/responsive-screens.png)
+  - [Game responsive](testing/game-responsive-screens.png)
 
 - [Google Chrome DevTools](https://developers.google.com/web/tools/chrome-devtools) - used for testing and debugging along the development process.
 
@@ -76,7 +73,15 @@ Some bugs were found and fixed, this will be explained in the bugs section below
 6. As a new user, I want to be able to contact the site owner.
     - Form that requires the user to input data to be able to submit and that shows an alert to let the user know that the message has been sent.
 
+7. As a user I would like to have a timer to play so I can improve my score having the same time to play.
+    - The time allocated is 30 second and the user will see the score in the modal at the end of the game.
+
+8. As a user I would to easily replay the game after finish it.
+    - The user has a replay button from the game over modal. After clicking it the timer and the score will restart.
+
 ## Manual testing
+
+Manual testing is a process in which test cases are executed manually without using any automated tool. All test cases are executed manually according to the user stories to make sure the application is working.
 
 ### Home Page
 
@@ -115,6 +120,12 @@ Some bugs were found and fixed, this will be explained in the bugs section below
 
     2. Check that scoreboard is correctly update when the puppies match.
 
+5. Game over:
+    1. Game modal appears when the timer finishes the 30 seconds time allocated.
+    2. It's possible to restart the game from the modal.
+    3. It's possible to view the score in the modal.
+    4. It's possible to go to go to the come page from the button in the modal.
+
 ### Contact Page
 
 1. Navigation bar:
@@ -126,6 +137,7 @@ Some bugs were found and fixed, this will be explained in the bugs section below
     3. Try to submit the form with a file uploaded, verify that file selection process works.
     4. Try to submit the form with all inputs valid and verify that a success message appears.
     5. Reduce and expand width of window to verify that the form display behaves and centres the way expected, and that it looks good on all device widths.
+    6. Introduce numbers instead of characters and the form will ask for the right format.
 
 3. Alert when message sent:
     1. Once the message has been sent with the correct format an alert confirming the message has been sent appears.
@@ -143,6 +155,9 @@ The following manual tests have been performed, link video at the end.
     1. Open it clicking the button.
     2. Matching the puppies to make them disappear.
     3. Checking that the score is updating.
+    4. When the time is finished a modal will appear showing the score and the restart and home buttons.
+    5. When the restart button is clicked the game restarts.
+    6. The modal will show the points scored in the game.
 
 3. Contact form:
     1. Go to the "Contact" page
@@ -164,28 +179,46 @@ What do you do? | Expected Behavior | Pass/Fail  |
 | Play the game | Puppies disappear when 3 of them match | Pass |
 | Play the game | Puppies disappear when 4 of them match | Pass |
 | Play the game | Score updates when  puppies matched | Pass |
+| Play the game | Shows the modal when the timer is finished | Pass |
+| Play the game | Restart the game from the modal | Pass |
+| Play the game | Go to the home page from the modal | Pass |
 | Contact the site owner | Prompt an alert if the name is missing | Pass |
 | Contact the site owner | Prompt an alert if the email is missing | Pass |
 | Contact the site owner | Prompt an alert if the email format is incorrect | Pass |
 | Contact the site owner | Prompt an alert if the message format is incorrect | Pass |
 | Contact the site owner | Prompt an alert that the message has been sent | Pass |
+| Contact the site owner | Prompt an alert with the name of the user | Pass |
 
-Video testing the site in the following [link](https://www.loom.com/share/4cd9b9f3ad864e229848f7b6f35b7d50).
+Video testing the site in the following [link](https://www.loom.com/share/2392670110e54b47a6d05e426af24027).
 
 ### Devices and browsers
 
-Manually tested on:
+Manually tested on the following browsers:
 
 - Chrome.
 - Safari.
 
+Tested on the following devices using the Google Developer tools:
+
+- Moto G4
+- Galaxy S5
+- Pixel 2
+- Pixel 2 XL
+- iPhone 5/SE
+- iPhone 6/7/8
+- iPhone 6/7/8 Plus
+- iPhone X
+- iPad
+- iPad Pro
+- Surface Duo
+- Galaxy Fold
+
 Tested on the following devices:
 
-- MacBook Pro.
-- HP.
-- iPhone XS.
-- Samsung.
-- iPad.
+- iPhone XS
+- iPhone 12
+- Samsung S20
+- iPad Pro 12.9 2nd generation
 
 ## Bugs
 
@@ -199,6 +232,7 @@ Tested on the following devices:
 - Some semicolons were missing on the Game JS file.
 - The test reported an error on the score was initially an h3 but as it was empty I modify it using a p tag instead, modifying the styles on the CSS file as well.  
 - The game was broken when some moves were made, generating an infinite loop. This was because the value on the row of three. Once the value was fixed it didn't happen again.
+- The game was not able to play in touch devices. After some research and help from the community I found out that the problem was with the polyfill that enable HTML5 drag and drop on mobile devices. The code in the DragDropTouch.js file has been added to the index.html file to fix it.
 
 ### Bugs found and not fixed
 

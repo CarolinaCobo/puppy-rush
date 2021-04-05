@@ -58,7 +58,7 @@ Puppy matching game. Match as many groups of three or four puppies before the ti
 | Be able to find easily the contact information  | I can send a message easily |
 | Play the game in touch screens | play on a phone or tablet devices |
 | Be able to contact the site owner | I can communicate with them |
-| Have a timer to play | improve my score having the same time to improve my game|
+| Have a timer when playing the game | improve my score practicing with the same amount of time |
 | Easily replay the game after finish it  | have a better user experience on the game |
 
 ### Site owner objectives
@@ -236,6 +236,7 @@ I received inspiration for this project from:
 * [Codú Community](https://www.youtube.com/channel/UCvI5azOD4eDumpshr00EfIw)
 * [FreeCodeCamp](https://www.freecodecamp.org/)
 * [Anna Greaves](https://github.com/AJGreaves)
+* [Bernardo Castilho](https://github.com/Bernardo-Castilho/dragdroptouch)
 
 ### I received advice and support from
 
