@@ -34,11 +34,13 @@ Main [README.md](/README.md) file.
 
 ## Automated testing
 
-- Both HTML and CSS code has been validated in [W3C CSS validation](https://jigsaw.w3.org/css-validator/) and [W3C Markup Validation](https://validator.w3.org/) to check the validity of the website code.
+- Both HTML and CSS code has been validated in [W3C CSS validation](https://jigsaw.w3.org/css-validator/) and [W3C Markup Validation](https://validator.w3.org/) to check the validity of the website code. In the following links a screenshot of the passed tests
+  - [HTML](testing/html-test.png)
 
 - Screenshots of the passed test on the following [link](https://github.com/CarolinaCobo/puppy-rush/tree/main/assets/testing).
 
 - [Jshint](https://jshint.com/)
+  - [Game.js file](testing/js-hint-game.png)
 
 Some bugs were found and fixed, this will be explained in the bugs section below.
 
@@ -46,20 +48,12 @@ Some bugs were found and fixed, this will be explained in the bugs section below
 
 - [Am I Responsive](http://ami.responsivedesign.is/) - test the game in different sizes.  
 
-    ![Responsive](assets/testing/responsive-screens.png)  
+    ![Responsive](testing/responsive-screens.png)
+    ![Game responsive](testing/game-responsive-screens.png)
 
 - [Google Chrome DevTools](https://developers.google.com/web/tools/chrome-devtools) - used for testing and debugging along the development process.
 
 ## User Stories
-
-### User stories paths
-
-Most common paths through the website:
-
-- Landing page > Play > Contact
-- Landing page > How to play > Contact
-
-The How to Play button is not necessarily part of the flow of the site for users, but it has been included as an explanation in case the user wants to know what to expect from the game before playing.
 
 ### Testing user stories
 
@@ -208,9 +202,4 @@ Tested on the following devices:
 
 ### Bugs found and not fixed
 
-- Even though the buttons can be clicked on touch screens, the game can be visualized but it's not possible to play it. After doing some research and the time available to complete this assessment the decision made was to left it out and tackle it in future improvements of the game.
-- Sometimes some squares remain empty even if they have the value, once they are moved they reappear. This bug has been tried to be fixed but no solution could be found  and no errors are reported. More research to be done in the future.
-
-## Acknowledgements
-
-- Anna Greaves (structure for this section.)
+- Sometimes some squares remain empty even if they have the value, once they are moved they reappear. This bug has been tried to be fixed but no solution could be found and no errors on the console when the game is being played have been reported. More research to be done in the future.
