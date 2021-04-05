@@ -31,14 +31,14 @@ Puppy matching game. Match as many groups of three or four puppies before the ti
 * [Libraries](#libraries)
 * [Programs and tools](#programs-and-tools)
 
-5.[Testing](#testing)
+4.[Testing](#testing)
 
-6.[Deployment](#deployment)
+5.[Deployment](#deployment)
 
 * [GitHub pages](#github-pages)
 * [Cloning](#cloning)
 
-7.[Credits](#credits)
+6.[Credits](#credits)
 
 * [Content](#content)
 * [Media](#media)
