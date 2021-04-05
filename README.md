@@ -11,32 +11,32 @@ Puppy matching game. Match as many groups of three or four puppies before the ti
 1.[UX](#ux)
 
 * [User Stories](#user-stories)
+* [Structure](#structure)
+* [Home page](#home-page)
+* [Game page](#game-page)
+* [Contact page](#contact-page)
+* [Styling](#styling)
+  * [Colours](#colours)
+  * [Fonts](#fonts)
+  * [Favicon](#favicon)
 
-2.[Structure](#structure)
+2.[Features](#features)
 
-* [Design process](#design-process)
-  * [Page structure](#page-structure)
-  * [Home page](#home-page)
-  * [Recipes page](#recipes-page)
-  * [Contact page](#contact-page)
-
-3.[Styling](#styling)
-
-* [Colours](#colours)
-* [Fonts](#fonts)
-* [Features](#features)
 * [Existing features](#existing-features)
 * [Future features](#future-features)
 
-4.[Technologies used](#technologies-used)
+3.[Technologies used](#technologies-used)
 
 * [Languages](#languages)
 * [Libraries](#libraries)
-* [Tools](#tools)
+* [Programs and tools](#programs-and-tools)
 
 5.[Testing](#testing)
 
 6.[Deployment](#deployment)
+
+* [GitHub pages](#github-pages)
+* [Cloning](#cloning)
 
 7.[Credits](#credits)
 
@@ -53,11 +53,13 @@ Puppy matching game. Match as many groups of three or four puppies before the ti
 | ------------- |:-------------:|
 | Easily understand the purpose of the page | Learn how to play and play the game|
 | Use an aesthetically pleasing site| enjoy my user experience |
-| Easily navigate the site| Quickly find what I need |
-| Find features that load quickly | Save time |
+| Easily navigate the site | quickly find what I need |
 | Play the game in different screen sizes | I can use different devices |
 | Be able to find easily the contact information  | I can send a message easily |
+| Play the game in touch screens | play on a phone or tablet devices |
 | Be able to contact the site owner | I can communicate with them |
+| Have a timer to play | improve my score having the same time to improve my game|
+| Easily replay the game after finish it  | have a better user experience on the game |
 
 ### Site owner objectives
 
@@ -67,7 +69,7 @@ Puppy matching game. Match as many groups of three or four puppies before the ti
 | Use an aesthetically pleasing site| Have an easy experience |
 | Provide an easy way to contact me| Give feedback or ask questions |  
 
-The wireframes for this project:  
+The wireframes for this project can be found in the following links:  
 
 * [Desktop](assets/wireframes/desktop-view.png)
 * [iPad](assets/wireframes/ipad-view.png)
@@ -96,9 +98,9 @@ On top of the page the user can find two buttons to reload the home page or go t
 
 The contact page has three boxes with name, email, question and button to submit a question. Once the question is submitted an alert will open showing that the message was sent.
 
-## Styling
+### Styling
 
-### Colours
+#### Colours
 
 Using [Colorhunt.co](https://colorhunt.co) I chose a palette with complementary colours that could be found in different sites:
 
@@ -108,15 +110,13 @@ Using [Colorhunt.co](https://colorhunt.co) I chose a palette with complementary 
 * ![#ccc](https://via.placeholder.com/15/ccc/000000?text=+) `#ccc` - Border of the button elements.
 * ![#ffffff](https://via.placeholder.com/15/ffffff/000000?text=+) `#ffffff` - Game board background color.  
 
-### Fonts
+#### Fonts
 
 For the logo and the Score I used  "Press Start 2P" and for the rest of the site "Poppins". Both imported from Google fonts. Used on the Universal selector to format the entire site.
 
-### Favicon
+#### Favicon
 
 I used as Favicon one of the images used for the game. I converted it using Favicon.io.
-
-***
 
 ## Features
 
@@ -133,14 +133,18 @@ I used as Favicon one of the images used for the game. I converted it using Favi
 * Feature 4 - Two buttons on the top of the page, one to return to the main page and another to go to the contact page.
   * The buttons are SVG images and link with the Home page and contact page.
 
-* Feature 4 - Allows users to send a message with a question.
+* Feature 4 - Allows users to send a message to the site owner.
   * Built with HTML, CSS and JS and used EmailJS API to send a message to the site owner.
+
+* Feature 5 - Let the user replay the game from the game over screen.
+  * Replay button displayed usually in games that let the user play again.
+
+* Feature 6 - Timer.
+  * 30 seconds timer that when is over triggers the game over modal, showing the score of that game, restart and home buttons.
 
 ### Future features
 
 * Score board with a ranking of players.
-
-***
 
 ## Technologies Used
 
@@ -158,21 +162,18 @@ I used as Favicon one of the images used for the game. I converted it using Favi
 * [Hero Icons](https://heroicons.com/) - Site icons.
 * [TailwindCSS](https://tailwindcss.com/docs/box-shadow) - For inspiration on the styles for the site.
 
-#### Programs and Tools
+### Programs and Tools
 
 * [VSCode](https://code.visualstudio.com/) - used as IDE for the project.
 * [Git](https://git-scm.com/) - used for version control.
 * [Github](https://github.com/) - used to host repository and to generate the live website.
+* [Github projects](https://github.com/CarolinaCobo/puppy-rush/projects/1) - used to track all the tasks, bugs and issues. 
 * [Balsamiq](https://balsamiq.com/) - used to create the wireframes.
 * [Chrome Developer Tools](https://developers.google.com/web/tools/chrome-devtools) - used to test and optimize the site.
-
-***
 
 ## Testing
 
 The test performed can be found at the [testing.md](/TESTING.md) file.
-
-***
 
 ## Deployment
 
@@ -209,8 +210,6 @@ To run this code locally, you can clone this repository directly into the editor
 To cut ties with this GitHub repository, type git remote rm origin into the terminal.
 For more information regarding cloning of a repository click [here](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository).
 
-***
-
 ## Credits
 
 ### Content
@@ -238,8 +237,9 @@ I received inspiration for this project from:
 * [FreeCodeCamp](https://www.freecodecamp.org/)
 * [Anna Greaves](https://github.com/AJGreaves)
 
-#### I received advice and support from
+### I received advice and support from
 
 * [Codú Community](https://discord.com/invite/NxSkYtZ)
 * My mentor [Precious Ijege](https://www.linkedin.com/in/precious-ijege-908a00168/)
+* [Niall Maher](https://www.linkedin.com/in/nialljoemaher/?originalSubdomain=ie)
 * Code Institute [Slack Community](code-institute-room.slack.com)
