@@ -1,14 +1,16 @@
+// jshint esversion: 6
 // Code from Ana Kubow Candy Crush tutorial with changes of my own.
-
 let newLocal = "DOMContentLoaded";
 
 document.addEventListener(newLocal, () => {
   const grid = document.querySelector(".grid");
   const scoreDisplay = document.getElementById("score");
-  const finalScoreDisplay = document.getElementById("final-score")
+  const finalScoreDisplay = document.getElementById("final-score");
   const width = 8;
   const squares = [];
   let score = 0;
+  let i = 0;
+  
 
   const puppyColors = [
     "url(assets/images/red-puppy.png)",
@@ -286,13 +288,13 @@ document.addEventListener(newLocal, () => {
   function countDown() {
     setInterval(function () {
       if (timeLeft <= 0) {
-        clearInterval(timeLeft = 0)
+        clearInterval(timeLeft = 0);
         gameEnd();
-      };
+      }
       timeLeftDisplay.innerHTML = timeLeft;
       timeLeft -= 1;
-    }, 1000)
-  };
+    }, 1000);
+  }
 
   playButton.addEventListener('click', countDown);
 
@@ -309,7 +311,7 @@ document.addEventListener(newLocal, () => {
   const restartButton = document.getElementById("restart-btn");
 
   function restartGame() {
-    const gameOverModal = document.getElementById('end-modal')
+    const gameOverModal = document.getElementById('end-modal');
     gameOverModal.classList.toggle('hidden');
 
     score = 0;
