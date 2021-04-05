@@ -173,7 +173,7 @@ I used as Favicon one of the images used for the game. I converted it using Favi
 
 ## Testing
 
-The test performed can be found at the [testing.md](/TESTING.md) file.
+The test performed can be found at the [testing.md](testing/testing.md) file.
 
 ## Deployment
 
