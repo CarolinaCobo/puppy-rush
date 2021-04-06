@@ -11,6 +11,8 @@ Puppy matching game. Match as many groups of three or four puppies before the ti
 1.[UX](#ux)
 
 * [User Stories](#user-stories)
+* [Site owner objectives](#site-owner-objectives)
+* [Wireframes](#wireframes)
 * [Structure](#structure)
 * [Home page](#home-page)
 * [Game page](#game-page)
@@ -68,6 +70,8 @@ Puppy matching game. Match as many groups of three or four puppies before the ti
 | Offer an site that is easy to navigate | Can enjoy the game|
 | Use an aesthetically pleasing site| Have an easy experience |
 | Provide an easy way to contact me| Give feedback or ask questions |  
+
+### Wireframes
 
 The wireframes for this project can be found in the following links:  
 
@@ -173,7 +177,7 @@ I used as Favicon one of the images used for the game. I converted it using Favi
 
 ## Testing
 
-The test performed can be found at the [testing.md](testing/testing.md) file.
+The test performed can be found at the [testing.md](testing.md) file.
 
 ## Deployment
 

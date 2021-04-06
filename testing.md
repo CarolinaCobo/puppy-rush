@@ -1,6 +1,6 @@
 # Puppy Rush Testing
 
-1.[Automated Testing](#automated-testing)
+1.[Code validation](#code-validationjt)
 
 2.[Other tools used](#other-tools-used)
 
@@ -30,7 +30,7 @@ Main [README.md](/README.md) file.
 
 ***
 
-## Automated testing
+## Code validation
 
 - Both HTML and CSS code has been validated in [W3C CSS validation](https://jigsaw.w3.org/css-validator/) and [W3C Markup Validation](https://validator.w3.org/) to check the validity of the website code. In the following links a screenshot of the passed tests
   - [HTML](testing/html-test.png)
