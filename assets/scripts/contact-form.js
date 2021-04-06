@@ -1,6 +1,6 @@
 // Code from EmailJS documentation and Slack Questions
 
-const button = document.getElementById('button');
+const btn = document.getElementById('button');
 const contactForm = document.getElementById('form');
 
 //Setting variables for serviceID and templateID
@@ -11,12 +11,12 @@ const templateID = 'template_tngtc2q';
 contactForm.addEventListener('submit', function (event) {
   event.preventDefault(); //preventing default submit 
 
-  button.value = 'Sending...'; //displaying new button value when sending 
+  btn.value = 'Sending...'; //displaying new button value when sending 
 
   emailjs.sendForm(serviceID, templateID, this) //sending the form
     .then(() => {
 
-      button.value = 'Submit';
+      btn.value = 'Submit';
 
       //get the name of the user from input field
       let userName = document.getElementById('name');
@@ -30,7 +30,7 @@ contactForm.addEventListener('submit', function (event) {
 
     }, (err) => {
       //error message if the email is not being sent
-      button.value = 'Submit';
+      btn.value = 'Submit';
       alert(alert(JSON.stringify(err)`Sorry ${userName.value} something went wrong, please try again`));
     });
 });
