@@ -1,6 +1,6 @@
 # Puppy Rush Testing
 
-1.[Code validation](#code-validationjt)
+1.[Code validation](#code-validation)
 
 2.[Other tools used](#other-tools-used)
 
@@ -24,7 +24,7 @@
 
 ***  
 
-Main [README.md](/README.md) file.  
+Main [README.md](README.md) file.  
 
 [Live site](https://carolinacobo.github.io/puppy-rush/) on Github Pages.  
 
@@ -33,20 +33,20 @@ Main [README.md](/README.md) file.
 ## Code validation
 
 - Both HTML and CSS code has been validated in [W3C CSS validation](https://jigsaw.w3.org/css-validator/) and [W3C Markup Validation](https://validator.w3.org/) to check the validity of the website code. In the following links a screenshot of the passed tests
-  - [HTML](testing/html-test.png)
-  - [CSS](testing/css-test.png)
+  - [HTML](assets/testing/html-test.png)
+  - [CSS](assets/testing/css-test.png)
 
 - [Jshint](https://jshint.com/) Links to the result of the performed test below:
-  - [Game.js](testing/js-hint-game.png)
-  - [Contact](testing/js-hint-contactForm.png)
+  - [Game.js](assets/testing/js-hint-game.png)
+  - [Contact](assets/testing/js-hint-contactForm.png)
 
 Some bugs were found and fixed, this will be explained in the bugs section below.
 
 ## Other tools used
 
 - [Am I Responsive](http://ami.responsivedesign.is/) - test the game in different sizes.  
-  - [Responsive](testing/responsive-screens.png)
-  - [Game responsive](testing/game-responsive-screens.png)
+  - [Responsive](assets/testing/responsive-screens.png)
+  - [Game responsive](assets/testing/responsive-game-screens.png)
 
 - [Google Chrome DevTools](https://developers.google.com/web/tools/chrome-devtools) - used for testing and debugging along the development process.
 
@@ -57,27 +57,37 @@ Some bugs were found and fixed, this will be explained in the bugs section below
 1. As a new user I want to easily understand the purpose of the page.
     - The site is simple with the logo on the top left and two buttons one to access the game and another one to learn how to play.
     - Also the navbar has two icons that are commonly used in games to go to the Home page and the Contact page.
+        ![logo](assets/testing/navbar-logo-icons.png)
 
 2. As a new user of the website, I want to find an aesthetically pleasing site.
     - A clearly labelled buttons to play and how to play are proportioned. The buttons on the navigation bar are the ones traditionally used on games.
+    ![play/how to play](assets/testing/play-buttons.png)
 
 3. As a new user, I want to find features that load quickly.
-    - The code has been optimized to offer the quickest possible loading page.
+    - The code has been optimized to offer the quickest loading page possible.
 
 4. As a new user, I want to easily play the game in different screen sizes.
     - The game works in different screen sizes as shown above. There's a bug that elaborated below as the game can't be played on touch screens.
+    ![logo](assets/testing/responsive-game-screens.png)
 
 5. As a new user, I want to be able to find easily the contact information.
     - The contact button can be accessed from all the pages Home page, game page and Contact page.
 
 6. As a new user, I want to be able to contact the site owner.
     - Form that requires the user to input data to be able to submit and that shows an alert to let the user know that the message has been sent.
+    ![logo](assets/testing/contact-form.png)
+    - Once the message has been sent the user will get an alert including their name to confirm that the message has been sent and received by the site owner.
+    ![logo](assets/testing/alert-message.png)
 
 7. As a user I would like to have a timer to play so I can improve my score having the same time to play.
     - The time allocated is 30 second and the user will see the score in the modal at the end of the game.
 
+    ![logo](assets/testing/timer-score.png)
+
 8. As a user I would to easily replay the game after finish it.
     - The user has a replay button from the game over modal. After clicking it the timer and the score will restart.
+
+    ![logo](assets/testing/game-over-modal.png)
 
 ## Manual testing
 
@@ -195,8 +205,9 @@ Video testing the site in the following [link](https://www.loom.com/share/239267
 
 Manually tested on the following browsers:
 
-- Chrome.
-- Safari.
+- Chrome
+- Safari
+- Firefox
 
 Tested on the following devices using the Google Developer tools:
 

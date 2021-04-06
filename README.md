@@ -1,6 +1,6 @@
 # Puppy Rush
 
-![Logo](testing/responsive-screens.png)
+![Logo](assets/testing/responsive-screens.png)
 
 Puppy matching game. Match as many groups of three or four puppies before the time is out.
 
@@ -73,15 +73,18 @@ Puppy matching game. Match as many groups of three or four puppies before the ti
 
 ### Wireframes
 
-The wireframes for this project can be found in the following links:  
+The wireframes for this project can be found below:
 
-* [Desktop](assets/wireframes/desktop-view.png)
-* [iPad](assets/wireframes/ipad-view.png)
-* [Mobile](assets/wireframes/mobile-view.png)
+* Desktop:
+  ![Desktop](assets/wireframes/desktop-view.png)
+* iPad:
+   ![iPad](assets/wireframes/ipad-view.png)
+* Mobile:
+  ![Mobile](assets/wireframes/mobile-view.png)
 
 ### Structure
 
-* My aim was to make the game simple and easy for the user to play it.
+* The aim during the design and development process was to make the game simple and easy for the user to play it.
 * All pages follow the same style and color palette, simple and easy to navigate.
 * The navbar on top of the page is static and have the icons linked to the main site and the contact site. It also has the logo. It's responsive on smaller devices.
 * The home page has two buttons one to play that will take the user to that side of the games and a "How to play" one that opens a modal to view the instructions.
