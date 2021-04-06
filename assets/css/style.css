@@ -54,7 +54,7 @@ h1 {
 /*************************** BUTTONS *****************************/
 
 /* Modal buttons */
-.btn-modal {
+.button-modal {
   background-color: #fff;
   padding: 20px;
   border-radius: 1rem;
@@ -66,7 +66,7 @@ h1 {
   cursor: pointer;
 }
 
-.btn-modal:hover {
+.button-modal:hover {
   background-color: #c7a1f5;
 }
 
@@ -76,7 +76,7 @@ h1 {
 }
 
 /* Icon buttons */
-.btn-icon {
+.button-icon {
   height: 50px;
   width: 50px;
   background: none;
@@ -136,12 +136,12 @@ h1 {
 
 /***** Buttons game over modal ****/
 
-.gameOverBtn {
+.gameOverbutton {
   position: absolute;
   margin-top: 120px;
 }
 
-.btn-icon-modal {
+.button-icon-modal {
   height: 60px;
   width: 60px;
   background: none;
@@ -221,7 +221,7 @@ svg:hover {
   transform: scale(1.1);
 }
 
-.nav-btn {
+.nav-button {
   margin-right: 20px;
   margin-top: -65px;
   float: right;
@@ -334,14 +334,14 @@ svg:hover {
   }
 
   /* Navbar  buttons */
-  .btn-icon {
+  .button-icon {
     height: 40px;
     width: 40px;
     background: none;
     margin-left: 0;
     margin-top: 30px;
   }
-  .nav-btn {
+  .nav-button {
     margin-left: 30px;
   }
 
@@ -350,7 +350,7 @@ svg:hover {
     margin: 80px 80px;
   }
 
-  .btn-modal {
+  .button-modal {
     margin-bottom: 10px;
   }
 
@@ -425,14 +425,14 @@ svg:hover {
   }
 
   /* Navbar  buttons */
-  .btn-icon {
+  .button-icon {
     height: 40px;
     width: 40px;
     background: none;
     margin-left: 0;
     margin-top: 30px;
   }
-  .nav-btn {
+  .nav-button {
     margin-left: 30px;
   }
 
@@ -441,7 +441,7 @@ svg:hover {
     margin: 80px 80px;
   }
 
-  .btn-modal {
+  .button-modal {
     margin-bottom: 10px;
   }
 

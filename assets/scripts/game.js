@@ -308,7 +308,7 @@ document.addEventListener(newLocal, () => {
 
 
   // Restart the game
-  const restartButton = document.getElementById("restart-btn");
+  const restartButton = document.getElementById("restart-button");
 
   function restartGame() {
     const gameOverModal = document.getElementById('end-modal');
