@@ -1,7 +1,7 @@
-// jshint esversion: 6
 // Code from Ana Kubow Candy Crush tutorial with changes of my own.
 let newLocal = "DOMContentLoaded";
 
+// Add event listner to the newlocal variable so when the DOM has loaded it will start.
 document.addEventListener(newLocal, () => {
   const grid = document.querySelector(".grid");
   const scoreDisplay = document.getElementById("score");
@@ -10,8 +10,8 @@ document.addEventListener(newLocal, () => {
   const squares = [];
   let score = 0;
   let i = 0;
-  
 
+  // Assigns the variables for the puppies
   const puppyColors = [
     "url(assets/images/red-puppy.png)",
     "url(assets/images/yellow-puppy.png)",
@@ -21,7 +21,7 @@ document.addEventListener(newLocal, () => {
     "url(assets/images/blue-puppy.png)",
   ];
 
-  // Create board
+  // Create game board
   function createBoard() {
     for (let i = 0; i < width * width; i++) {
       const square = document.createElement("div"); // creates new div
@@ -35,7 +35,7 @@ document.addEventListener(newLocal, () => {
   }
   createBoard();
 
-  // Drag the puppies.
+  // Creates the variables for the colors to being replace and dragged
   let colorBeingDragged;
   let colorBeingReplaced;
   let squareIdBeingDragged;
@@ -49,21 +49,28 @@ document.addEventListener(newLocal, () => {
   squares.forEach((square) => square.addEventListener("dragLeave", dragLeave));
   squares.forEach((square) => square.addEventListener("drop", dragDrop));
 
+  // When a puppy is drag this will pick the color that is being dragged and make it an integer.
   function dragStart() {
     colorBeingDragged = this.style.backgroundImage; // Will pick the color that is being dragged
     squareIdBeingDragged = parseInt(this.id); //ParseInt will make it an integer
   }
 
+  // This will be triggered when a puppy is being moved. 
   function dragOver(e) {
     e.preventDefault(); //Prevents it to do the default action
   }
-
+  
+  // This will be triggered when a puppy is being putted in a new place. 
   function dragEnter(e) {
     e.preventDefault(); //Prevents it to do the default action
   }
 
-  function dragLeave() { }
+  // When the user stops clicking and leave the puppy in the a place using an invalid move it will be back to where it was.
+  function dragLeave() {
+    this.style.backgroundImage = '';
+  }
 
+  // When the puppy is being dropped in the new location using a valid move. 
   function dragDrop() {
     colorBeingReplaced = this.style.backgroundImage;
     squareIdBeingReplaced = parseInt(this.id);
@@ -71,8 +78,8 @@ document.addEventListener(newLocal, () => {
     squares[squareIdBeingDragged].style.backgroundImage = colorBeingReplaced;
   }
 
+   //The drag acction will finish it the move that the user has been made is valid.
   function dragEnd() {
-    //Valid moves will only allow to move it around
     let validMoves = [
       squareIdBeingDragged - 1,
       squareIdBeingDragged - width,
@@ -92,8 +99,7 @@ document.addEventListener(newLocal, () => {
       squares[squareIdBeingDragged].style.backgroundImage = colorBeingDragged; //Color back to the original square
   }
 
-  // Drop puppies once some have been cleared
-
+  // Drop puppies from the top of the board game once some have been matched.
   function moveDown() {
     for (i = 0; i < 55; i++) {
       // Wants to check the squares below
@@ -115,7 +121,6 @@ document.addEventListener(newLocal, () => {
 
   // Checking for matches
   // Check for row of Four
-
   function checkRowForFour() {
     for (i = 0; i < 60; i++) {
       //Max squares is 64 so we are using 60 as it will check if there are 4 matches checking from 61 to 64
@@ -123,29 +128,7 @@ document.addEventListener(newLocal, () => {
       let decidedColor = squares[i].style.backgroundImage; // Grab the color of the first square and assign it
       const isBlank = squares[i].style.backgroundImage === ""; //Blank space if it's empty it equals true
 
-      const notValid = [
-        5,
-        6,
-        7,
-        13,
-        14,
-        15,
-        21,
-        22,
-        23,
-        29,
-        30,
-        31,
-        37,
-        38,
-        39,
-        45,
-        46,
-        47,
-        53,
-        54,
-        55,
-      ];
+      const notValid = [5, 6, 7, 13, 14, 15, 21, 22, 23, 29, 30, 31, 37, 38, 39, 45, 46, 47, 53, 54, 55]
       if (notValid.includes(i)) continue;
 
       if (
@@ -163,11 +146,9 @@ document.addEventListener(newLocal, () => {
       }
     }
   }
-
   checkRowForFour();
 
   // Check for column of Four
-
   function checkColumnForFour() {
     for (i = 0; i < 39; i++) {
       let columnOfFour = [i, i + width, i + width * 2, i + width * 3]; // Defines the row
@@ -193,7 +174,6 @@ document.addEventListener(newLocal, () => {
   checkColumnForFour();
 
   // Check for row of three
-
   function checkRowForThree() {
     for (i = 0; i < 61; i++) {
       //Max squares is 64 so we are using 61 as it will check if there are 3 matches checking from 61 to 64
@@ -223,7 +203,6 @@ document.addEventListener(newLocal, () => {
   checkRowForThree();
 
   // Check for column of three
-
   function checkColumnForThree() {
     for (i = 0; i < 47; i++) {
       //3 squares multiplied 7
@@ -248,9 +227,8 @@ document.addEventListener(newLocal, () => {
   }
 
   checkColumnForThree();
-
+ // Invokes the function constantly with a 100 milliseconds interval
   window.setInterval(function () {
-    // Invokes the function constantly with a 100 milliseconds interval
     moveDown();
     checkRowForFour();
     checkColumnForFour();
@@ -258,13 +236,13 @@ document.addEventListener(newLocal, () => {
     checkColumnForThree();
   }, 100);
 
-
   // Codú community helped me with this piece of code.
 
+  // A modal will appear on top of the game and it will have two buttons Play and how to play the how to play has also its own modal with the game rules.   
   const instructionsButton = document.getElementById("instructions");
   const instructionsModal = document.getElementById("inner-modal");
 
-  // Open the modal
+  // Open the modal with the instructions once the How To Play button is clicked.
   instructionsButton.addEventListener("click", () => {
     instructionsModal.classList.toggle("hidden");
   });
@@ -272,53 +250,48 @@ document.addEventListener(newLocal, () => {
   const playButton = document.getElementById("playButton");
   const gameModal = document.getElementById("showGame");
 
-  // When the user press click on the play button the score is set to 0
+  // When the user press click on the Play button the score is set to 0
   playButton.addEventListener("click", () => {
     score = 0;
     scoreDisplay.innerHTML = score;
     gameModal.classList.toggle("hidden");
-
   });
 
-  // Timer  
-
-  const timeLeftDisplay = document.querySelector('#time-left');
+  // Starts the Timer
+  const timeLeftDisplay = document.querySelector("#time-left");
   let timeLeft = 30;
 
+  //Timer countdown. 
   function countDown() {
     setInterval(function () {
       if (timeLeft <= 0) {
-        clearInterval(timeLeft = 0);
+        clearInterval((timeLeft = 0));
         gameEnd();
       }
       timeLeftDisplay.innerHTML = timeLeft;
       timeLeft -= 1;
     }, 1000);
   }
+  playButton.addEventListener("click", countDown);
 
-  playButton.addEventListener('click', countDown);
-
-  //  Shows modal when the game time is finished
+  //  Shows modal when the game timer is finished
   function gameEnd() {
-    const endModal = document.getElementById('end-modal');
-    endModal.classList.remove('hidden');
+    const endModal = document.getElementById("end-modal");
+    endModal.classList.remove("hidden");
     finalScoreDisplay.innerHTML = score;
-
   }
-
 
   // Restart the game
   const restartButton = document.getElementById("restart-btn");
 
   function restartGame() {
-    const gameOverModal = document.getElementById('end-modal');
-    gameOverModal.classList.toggle('hidden');
+    const gameOverModal = document.getElementById("end-modal");
+    gameOverModal.classList.toggle("hidden");
 
     score = 0;
     scoreDisplay.innerHTML = score;
     timeLeft = 30;
-
   }
 
-  restartButton.addEventListener('click', restartGame);
+  restartButton.addEventListener("click", restartGame);
 });
