@@ -18,10 +18,10 @@
   <body>
     <div class="navbar">
       <h1 onclick="window.location.href = 'index.html';">Puppy Rush</h1>
-      <!-- Navigation bar -->
+      <!-- Navigation buttons -->
       <div class="nav-btn">
         <!-- Onclick function from Mdn documentation -->
-        <!-- Buttons on the navigation bar -->
+        <!-- Home button -->
         <button class="btn-icon" onclick="window.location.href = 'index.html';">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -37,6 +37,7 @@
             />
           </svg>
         </button>
+        <!-- Contact button -->
         <button
           class="btn-icon"
           onclick="window.location.href = 'contact.html';"
@@ -76,7 +77,7 @@
           </button>
         </div>
       </div>
-      <!-- Game over modal, will show it once the timer finish -->
+      <!-- Game over modal, will show it once the timer finishes -->
       <section class="gameover-modal hidden" id="end-modal">
         <section class="game-finished">
           <h3>Game finished!</h3>
@@ -117,15 +118,16 @@
           </button>
         </section>
       </section>
-
       <!-- Score board -->
       <section>
         <div class="score-board">
           <div class="score-display">
+            <!-- Timer -->
             <div>
               <h3>Timer</h3>
               <p><span class="badge info-window" id="time-left">30</span></p>
             </div>
+            <!-- Score -->
             <div>
               <h3>Score</h3>
               <p id="score"></p>

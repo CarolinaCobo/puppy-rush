@@ -1,5 +1,3 @@
-<!-- All code in this section is my own -->
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -13,8 +11,8 @@
     <script type="text/javascript">
         emailjs.init('user_HTT6JvIMa0YqrzXyDfQLh')
     </script>
-    
 </head>
+<!-- body -->
 
 <body>
     <!-- Navigation bar -->
@@ -38,35 +36,38 @@
             </a>
         </div>
     </div>
-    <!--  Code obtained in w3Schools with changes -->
-    <section>
-        <form id="form" class="contact-container">
+    <!-- Code obtained in w3Schools with changes -->
+    <!-- Contact form -->
+    <form id="form" class="contact-container">
+        <!-- name -->
+        <div class="col-75">
+            <input type="text" id="name" name="name" placeholder="Name" pattern="[A-Za-z]+" required
+                title="Allowed characters: A-Z, a-z" />
+        </div>
+        <!-- Surname -->
+        <div class="col-75">
+            <input type="text" id="name" name="surname" placeholder="Surname" pattern="[A-Za-z]+" required
+                title="Allowed characters: A-Z, a-z" />
+        </div>
+        <!-- Email -->
+        <div class="row">
             <div class="col-75">
-                <input type="text" id="name" name="name" placeholder="Name" pattern="[A-Za-z]+" required title="Allowed characters: A-Z, a-z" />
+                <input type="email" id="email" name="email" placeholder="Email" required />
             </div>
-
+        </div>
+        <!-- Message -->
+        <div class="row">
             <div class="col-75">
-                <input type="text" id="name" name="surname" placeholder="Surname" pattern="[A-Za-z]+" required title="Allowed characters: A-Z, a-z"/>
+                <textarea id="subject" name="subject" placeholder="Your message" required></textarea>
             </div>
-            
-            <div class="row">
-                <div class="col-75">
-                    <input type="email" id="email" name="email" placeholder="Email" required />
-                </div>
+        </div>
+        <!-- Send message button -->
+        <div class="row">
+            <div class="col-75">
+                <input id="button" type="submit" value="Submit">
             </div>
-            <div class="row">
-                <div class="col-75">
-                    <textarea id="subject" name="subject" placeholder="Your message" required></textarea>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-75">
-                    <input id="button" type="submit" value="Submit"  >
-                </div>
-            </div>
-        </form>
-    </section>
-   
+        </div>
+    </form>
     <!-- Footer section -->
     <footer class="footer">
         <div>2021 Copyright: Carolina Cobo</div>
