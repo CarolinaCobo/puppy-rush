@@ -55,6 +55,7 @@ Puppy matching game. Match as many groups of three or four puppies before the ti
 | ------------- |:-------------:|
 | Easily understand the purpose of the page | Learn how to play and play the game|
 | Use an aesthetically pleasing site| enjoy my user experience |
+| Have instructions to play the game | have a better user experience |
 | Easily navigate the site | quickly find what I need |
 | Play the game in different screen sizes | I can use different devices |
 | Be able to find easily the contact information  | I can send a message easily |

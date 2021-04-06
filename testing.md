@@ -65,7 +65,8 @@ Some bugs were found and fixed, this will be explained in the bugs section below
 
 3. As a new user, I want have instructions to play the game.
     - A modal will open and show the instructions if the user clicks on the How To Play Button.
-         ![play/how to play](assets/testing/how-to-play-modal.png)
+
+        ![play/how to play](assets/testing/how-to-play-modal.png)
 
 4. As a new user, I want to easily play the game in different screen sizes.
     - The game works in different screen sizes as shown above. There's a bug that elaborated below as the game can't be played on touch screens.
@@ -206,11 +207,33 @@ Video testing the site in the following [link](https://www.loom.com/share/239267
 
 Manually tested on the following browsers:
 
-- Chrome
-- Safari
-- Firefox
+Browser | Expected Behavior | Pass/Fail  |
+| ------------- |-------------| -----|
+|  Chrome | The page will load  | Pass |
+|  Chrome | Page renders correctly  | Pass |
+|  Chrome | Site looks as expected | Pass |
+|  Chrome | The game can be played | Pass |
+|  Chrome | The game will load  | Pass |
+|  Safari | The page will load  | Pass |
+|  Safari | Page renders correctly  | Pass |
+|  Safari | Site looks as expected | Pass |
+|  Safari | The game can be played | Pass |
+|  Safari | The game will load  | Pass |
+|  Firefox | The page will load  | Pass |
+|  Firefox | Page renders correctly  | Pass |
+|  Firefox| Site looks as expected | Pass |
+|  Firefox | The game can be played | Pass |
+|  Firefox | The game will load  | Pass |Firefox |
 
-Tested on the following devices using the Google Developer tools:
+Browser versions used in testing:
+
+- Google Chrome Version 89.0.4389.114 (Official Build) (x86_64).
+- Safari Version 14.0.3 (16610.4.3.1.7).
+- Firefox Version 87.0 (64-bit)
+
+***
+
+Tested on the following devices using the Google Chrome Developer tools:
 
 - Moto G4
 - Galaxy S5
@@ -225,12 +248,56 @@ Tested on the following devices using the Google Developer tools:
 - Surface Duo
 - Galaxy Fold
 
-Tested on the following devices:
+Chrome developer tools | Expected Behavior | Pass/Fail  |
+| ------------- |-------------| -----|
+|  All the listed above | The page will load  | Pass |
+|  All the listed above | Page renders correctly  | Pass |
+|  All the listed above | Site looks as expected | Pass |
+|  All the listed above | The game can be played | Pass |
+|  All the listed above | The game will load  | Pass |
+|  All the listed above | The game can be played in touch screens | Pass |
+
+When the game is tested using Google developer tools the page has to be refreshed so the touch events can work.
+
+***
+
+Tested on the following devices using the Firefox Developer tools:
+
+- Galaxy S9/S9+ Android 7.0
+- iPad
+- iPhone 6/7/8 iOS 11
+- iPhone 6/7/8 plus iOS 11
+- iPhone x/XS iOS 12
+- Kindle Fire HDX Linux
+
+Chrome developer tools | Expected Behavior | Pass/Fail  |
+| ------------- |-------------| -----|
+|  All the listed above | The page will load  | Pass |
+|  All the listed above | Page renders correctly  | Pass |
+|  All the listed above | Site looks as expected | Pass |
+|  All the listed above | The game can be played | Pass |
+|  All the listed above | The game will load  | Pass |
+|  All the listed above | The game can be played in touch screens | Fail |
+
+When the game is tested using Google developer tools the page has to be refreshed so the touch events can work.
+
+***
+
+Tested on the following physical devices:
 
 - iPhone XS
 - iPhone 12
 - Samsung S20
 - iPad Pro 12.9 2nd generation
+
+Devices | Expected Behavior | Pass/Fail  |
+| ------------- |-------------| -----|
+|  All the listed above | The page will load  | Pass |
+|  All the listed above | Page renders correctly  | Pass |
+|  All the listed above | Site looks as expected | Pass |
+|  All the listed above | The game can be played | Pass |
+|  All the listed above | The game will load  | Pass |
+|  All the listed above | The game can be played in touch screens | Pass |
 
 ## Bugs
 
@@ -248,4 +315,5 @@ Tested on the following devices:
 
 ### Bugs found and not fixed
 
+- While testing the game the tester found that the game doesn't work on touch screens devices on the Firefox Developer Tools. As Google Chrome is the recommended browser this will be fixed in future improvements.
 - Sometimes some squares remain empty even if they have the value, once they are moved they reappear. This bug has been tried to be fixed but no solution could be found and no errors on the console when the game is being played have been reported. More research to be done in the future.
