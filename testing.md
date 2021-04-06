@@ -50,6 +50,12 @@ Some bugs were found and fixed, this will be explained in the bugs section below
 
 - [Google Chrome DevTools](https://developers.google.com/web/tools/chrome-devtools) - used for testing and debugging along the development process.
 
+- [Lighthouse](https://chrome.google.com/webstore/detail/lighthouse/blipmdconlkpinefehnmjammfjpmpbjk?hl=en)
+
+    Lighthouse is an open-source, automated tool for improving the performance, quality, and correctness of your web apps. When auditing a page, Lighthouse runs a barrage of tests against the page, and then generates a report on how well the page did. From here you can use the failing tests as indicators on what you can do to improve your app.
+
+    ![Lighthouse](assets/testing/lighthouse-test.png)
+
 ## User Stories
 
 ### Testing user stories
@@ -61,7 +67,8 @@ Some bugs were found and fixed, this will be explained in the bugs section below
 
 2. As a new user of the website, I want to find an aesthetically pleasing site.
     - A clearly labelled buttons to play and how to play are proportioned. The buttons on the navigation bar are the ones traditionally used on games.
-    ![play/how to play](assets/testing/play-buttons.png)
+
+        ![play/how to play](assets/testing/play-buttons.png)
 
 3. As a new user, I want have instructions to play the game.
     - A modal will open and show the instructions if the user clicks on the How To Play Button.
@@ -317,3 +324,4 @@ Devices | Expected Behavior | Pass/Fail  |
 
 - While testing the game the tester found that the game doesn't work on touch screens devices on the Firefox Developer Tools. As Google Chrome is the recommended browser this will be fixed in future improvements.
 - Sometimes some squares remain empty even if they have the value, once they are moved they reappear. This bug has been tried to be fixed but no solution could be found and no errors on the console when the game is being played have been reported. More research to be done in the future.
+- After the Lighthouse test we can see that the accessability could be improved. It's reported that the buttons are not accessible as they use btn instead of button.
