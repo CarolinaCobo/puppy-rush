@@ -63,8 +63,9 @@ Some bugs were found and fixed, this will be explained in the bugs section below
     - A clearly labelled buttons to play and how to play are proportioned. The buttons on the navigation bar are the ones traditionally used on games.
     ![play/how to play](assets/testing/play-buttons.png)
 
-3. As a new user, I want to find features that load quickly.
-    - The code has been optimized to offer the quickest loading page possible.
+3. As a new user, I want have instructions to play the game.
+    - A modal will open and show the instructions if the user clicks on the How To Play Button.
+         ![play/how to play](assets/testing/how-to-play-modal.png)
 
 4. As a new user, I want to easily play the game in different screen sizes.
     - The game works in different screen sizes as shown above. There's a bug that elaborated below as the game can't be played on touch screens.
@@ -75,19 +76,19 @@ Some bugs were found and fixed, this will be explained in the bugs section below
 
 6. As a new user, I want to be able to contact the site owner.
     - Form that requires the user to input data to be able to submit and that shows an alert to let the user know that the message has been sent.
-    ![logo](assets/testing/contact-form.png)
+    ![contact-form](assets/testing/contact-form.png)
     - Once the message has been sent the user will get an alert including their name to confirm that the message has been sent and received by the site owner.
-    ![logo](assets/testing/alert-message.png)
+    ![alert-message](assets/testing/alert-message.png)
 
 7. As a user I would like to have a timer to play so I can improve my score having the same time to play.
     - The time allocated is 30 second and the user will see the score in the modal at the end of the game.
 
-    ![logo](assets/testing/timer-score.png)
+        ![timer-score](assets/testing/timer-score.png)
 
 8. As a user I would to easily replay the game after finish it.
     - The user has a replay button from the game over modal. After clicking it the timer and the score will restart.
 
-    ![logo](assets/testing/game-over-modal.png)
+        ![game-over-modal](assets/testing/game-over-modal.png)
 
 ## Manual testing
 
