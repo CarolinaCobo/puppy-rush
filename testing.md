@@ -84,9 +84,12 @@ Some bugs were found and fixed, this will be explained in the bugs section below
 
 6. As a new user, I want to be able to contact the site owner.
     - Form that requires the user to input data to be able to submit and that shows an alert to let the user know that the message has been sent.
-    ![contact-form](assets/testing/contact-form.png)
+
+        ![contact-form](assets/testing/contact-form.png)
+
     - Once the message has been sent the user will get an alert including their name to confirm that the message has been sent and received by the site owner.
-    ![alert-message](assets/testing/alert-message.png)
+
+        ![alert-message](assets/testing/alert-message.png)
 
 7. As a user I would like to have a timer to play so I can improve my score having the same time to play.
     - The time allocated is 30 second and the user will see the score in the modal at the end of the game.
